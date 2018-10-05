@@ -1,0 +1,7 @@
+# Copyright 2018 Atos SE and Worldline
+# Licensed under MIT (https://github.com/????/LICENSE)
+
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule		^section-(.*)$		collectResponses.php?Section=$1	[NC,L]
+RewriteRule		^results$			viewResults.php	[NC,L]
+
