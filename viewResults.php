@@ -1,6 +1,6 @@
 <?php 
 	/* Copyright 2018 Atos SE and Worldline
-	 * Licensed under MIT (https://github.com/????/LICENSE) */
+	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
 	require 'header.php';
 	require 'survey.php'; 

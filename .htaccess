@@ -1,5 +1,5 @@
 # Copyright 2018 Atos SE and Worldline
-# Licensed under MIT (https://github.com/????/LICENSE)
+# Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)
 
 RewriteEngine On # Turn on the rewriting engine
 RewriteRule		^section-(.*)$		collectResponses.php?Section=$1	[NC,L]
