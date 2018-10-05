@@ -5,8 +5,6 @@
 
 MVP: 
 
-- Prepare readme file
-- Upload to Github
 - Add results button to last page of survey
 - Order spider diagram based on config
 - Re-style questions a bit (inc section heading)
