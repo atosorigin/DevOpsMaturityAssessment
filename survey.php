@@ -2,19 +2,6 @@
 
 /* Copyright 2018 Atos SE and Worldline
  * Licensed under MIT (https://github.com/????/LICENSE)
-
-MVP: 
-
-- Add results button to last page of survey
-- Order spider diagram based on config
-- Re-style questions a bit (inc section heading)
-- Make navbar work (form submission when required), show current active page
-- Create page to render CSV file
-- On results page show the top 3 areas and the bottom 3 areas
-- Icon for video, blog and book on results page
-- Make advice configurable in json file
-- Create detailed report page for sub categories
-- Create about page which includes link to Github
  
  */
 
