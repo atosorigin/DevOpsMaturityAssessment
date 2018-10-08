@@ -9,6 +9,9 @@
 	// Create one variable with the labels and one with the data
 	$resultsSummary = $survey->GenerateResultsSummary();	
 	
+	// Sort into the order they should be displayed on the spider diagram
+	uasort( $resultsSummary, function($a, $b) { return $a['SpiderPos'] - $b['SpiderPos']; } );
+	
 	$labels = '[';
 	$data = '[';
 	

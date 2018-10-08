@@ -29,6 +29,10 @@ Class Survey
 		foreach ($this->sections as $section)
 		{
 			$summaryResults[$section['SectionName']] = array('MaxScore'=>0, 'Score'=>0, 'ScorePercentage'=>0);
+			if ( isset($section['SpiderPos']) )
+			{
+				$summaryResults[$section['SectionName']]['SpiderPos'] = $section['SpiderPos'];
+			}
 			
 			foreach ($section['Questions'] as $question)
 			{

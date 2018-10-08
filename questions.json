@@ -12,6 +12,7 @@
 	},
 	{
 		"SectionName" : "Team Agility",
+		"SpiderPos" : 2,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -49,6 +50,7 @@
 	},
 	{
 		"SectionName" : "Collaboration",
+		"SpiderPos" : 6,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -86,6 +88,7 @@
 	},
 	{
 		"SectionName" : "Automation",
+		"SpiderPos" : 3,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -198,6 +201,7 @@
 	},
 	{
 		"SectionName" : "Architecture and Design",
+		"SpiderPos" : 4,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -237,6 +241,7 @@
 	},
 	{
 		"SectionName" : "DevOps Practices",
+		"SpiderPos" : 5,
 		"Questions" : [
 			{
 				"Type" : "Checkbox",
@@ -324,6 +329,7 @@
 	},
 	{
 		"SectionName" : "Org Structure, Culture and Incentives",
+		"SpiderPos" : 1,
 		"Questions" : [
 			{
 				"Type" : "Option",
