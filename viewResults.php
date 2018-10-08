@@ -26,6 +26,9 @@
 	$labels = substr($labels, 0, -1) . ']';
 	$data = substr($data, 0, -1) . ']';
 	
+	// Now sort by highest to lowest score
+	uasort( $resultsSummary, function($a, $b) { return $b['ScorePercentage'] - $a['ScorePercentage']; } );
+	
 	?>
 	
 	<div class="container-fluid">
@@ -49,16 +52,21 @@
 						
 						<div class="row">
 							<div class="col-lg-12 mt-2">
-								<p>The responses to the questionaire show that the 3 areas in which you are strongest are Standardisation, DevOps Practices, and Automation.
+								<p>The responses to the questionaire show that the 3 areas in which you are strongest are <?=array_keys($resultsSummary)[0]?>, <?=array_keys($resultsSummary)[1]?>, and <?=array_keys($resultsSummary)[2]?>.
 								<p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>
 							</div>
 						</div>
+				
+						<?php
+							// Now sort by lowest to highest score
+							uasort( $resultsSummary, function($a, $b) { return $a['ScorePercentage'] - $b['ScorePercentage']; } );
+						?>
 				
 						<div class="row">
 							<div class="col-lg-6 mt-4 d-flex">
 								<div class="card"  style="flex: 1">
 									<h5 class="card-header text-center">
-										Collaboration
+										<?=array_keys($resultsSummary)[0]?>
 									</h5>
 									<div class="card-body">
 										
@@ -70,14 +78,14 @@
 										</ul>
 									</div>
 									<div class="card-footer text-muted text-center">
-										Your score: 78%
+										Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-6 mt-4 d-flex">
 								<div class="card"  style="flex: 1">
 									<h5 class="card-header text-center">
-										Organisation Structure, Culture and Incentives
+										<?=array_keys($resultsSummary)[1]?>
 									</h5>
 									<div class="card-body">
 										
@@ -89,7 +97,7 @@
 										</ul>
 									</div>
 									<div class="card-footer text-muted text-center">
-										Your score: 78%
+										Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
 									</div>
 								</div>
 							</div>
@@ -99,7 +107,7 @@
 							<div class="col-lg-12 mt-4 d-flex">
 								<div class="card" style="flex: 1">
 									<h5 class="card-header text-center">
-										Collaboration
+										<?=array_keys($resultsSummary)[2]?>
 									</h5>
 									<div class="card-body">
 										
@@ -111,7 +119,7 @@
 										</ul>
 									</div>
 									<div class="card-footer text-muted text-center">
-										Your score: 78%
+										Your score: <?=$resultsSummary[array_keys($resultsSummary)[2]]['ScorePercentage']?>%
 									</div>
 								</div>
 							</div>
@@ -127,57 +135,8 @@
 		</div>
 		
 	</div>
-		
-		
-		<!--
-		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<div class="bg-dark rounded-top p-2 ml-2 mt-2 mr-2" style="opacity: 0.7">
-					<canvas id="chartDevOpsPractices"></canvas>
-				</div>
-				<div class="bg-light rounded-bottom p-2 ml-2 mb-2 mr-2 text-dark" style="opacity: 0.7">
-				
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dapibus fermentum ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Phasellus rhoncus. Aliquam erat volutpat. Integer lacinia. Nulla non arcu lacinia neque faucibus fringilla. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Phasellus rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Aliquam ornare wisi eu metus. Suspendisse sagittis ultrices augue. Etiam bibendum elit eget erat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
-				</div>
-			</div>
-			<div class="col-lg-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<div class="bg-dark rounded-top p-2 ml-2 mt-2 mr-2" style="opacity: 0.7">
-					<canvas id="chartAutomation"></canvas>
-				</div>
-				<div class="bg-light rounded-bottom p-2 ml-2 mb-2 mr-2 text-dark" style="opacity: 0.7">
-				
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dapibus fermentum ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Phasellus rhoncus. Aliquam erat volutpat. Integer lacinia. Nulla non arcu lacinia neque faucibus fringilla. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Phasellus rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Aliquam ornare wisi eu metus. Suspendisse sagittis ultrices augue. Etiam bibendum elit eget erat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
-				</div>
-			</div>
-			<div class="col-lg-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<div class="bg-dark rounded-top p-2 ml-2 mt-2 mr-2" style="opacity: 0.7">
-					<canvas id="chartOrgStructure"></canvas>
-				</div>
-				<div class="bg-light rounded-bottom p-2 ml-2 mb-2 mr-2 text-dark" style="opacity: 0.7">
-				
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dapibus fermentum ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Phasellus rhoncus. Aliquam erat volutpat. Integer lacinia. Nulla non arcu lacinia neque faucibus fringilla. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Phasellus rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Aliquam ornare wisi eu metus. Suspendisse sagittis ultrices augue. Etiam bibendum elit eget erat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero.
-				</div>
-			</div>
-			<div class="col-lg-2"></div>
-		</div>
-	</div>	
-	-->
-	
-
-
-
 	
 <script>
-
 	
 	Chart.defaults.global.animation.duration = 3000;
 
