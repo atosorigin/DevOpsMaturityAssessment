@@ -2,16 +2,14 @@
 	/* Copyright 2018 Atos SE and Worldline
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
+	$isForm = TRUE;
 	require 'header.php';
-	require 'survey.php'; 
 ?> 
  
 	<div class="container-fluid">
 	<form action="test.php" method="POST">
   
 <?php
-
-	$survey = new Survey;
 
 	// Determine which section of the assessment we are showing
 	if (isset($_GET['Section']))
@@ -81,10 +79,6 @@
 	<?php
 	
 	require 'footer.php';
-	
-	function SectionNameToURLName($sectionName) {
-		return strtolower(str_replace(',', '', str_replace(' ', '-', $sectionName)));
-	}
 	
 	function renderQuestion($question) { 
 		

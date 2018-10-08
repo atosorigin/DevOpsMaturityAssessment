@@ -2,11 +2,10 @@
 	/* Copyright 2018 Atos SE and Worldline
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
+	$isForm = FALSE;
 	require 'header.php';
-	require 'survey.php'; 
 
 	// Create one variable with the labels and one with the data
-	$survey = new Survey;
 	$resultsSummary = $survey->GenerateResultsSummary();	
 	
 	$labels = '[';
@@ -176,7 +175,7 @@
 <script>
 
 	
-	Chart.defaults.global.animation.duration = 0;
+	Chart.defaults.global.animation.duration = 3000;
 
 	new Chart(document.getElementById("chartOverallResults"), {
 		type: 'radar',
@@ -221,6 +220,8 @@
 						ticks: {
 							display: false,
 							beginAtZero: true,
+							min: 0,
+							max: 100,
 							stepSize: 25,
 							callback: function(value, index, values) {
 								return value + '%';
