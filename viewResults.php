@@ -3,6 +3,7 @@
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
 	$isForm = FALSE;
+	$activePage = 'Results';
 	require 'header.php';
 
 	// Create one variable with the labels and one with the data

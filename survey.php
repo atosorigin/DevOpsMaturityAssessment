@@ -99,6 +99,10 @@ Class Survey
 		// Loop through the model and assign a unique ID to each question and answer to assist with form rendering and submission
 		foreach ($this->sections as $sectionIndex=>&$section)
 		{
+			if ( !isset($section['HasSubCategories']) )
+			{
+				$section['HasSubCategories'] = FALSE;
+			}
 			foreach ($section['Questions'] as $questionIndex=>&$question)
 			{
 				if ( $question['Type'] != 'Banner')
@@ -120,6 +124,10 @@ Class Survey
 						}
 					}
 				}
+				if ( isset($question['SubCategory']) )
+				{
+					$section['HasSubCategories'] = TRUE;
+				}			
 			}
 		}
 	}

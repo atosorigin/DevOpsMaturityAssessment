@@ -3,6 +3,7 @@
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
 	$isForm = TRUE;
+	$activePage = 'Questionaire';
 	require 'header.php';
 ?> 
  
@@ -12,15 +13,7 @@
 <?php
 
 	// Determine which section of the assessment we are showing
-	if (isset($_GET['Section']))
-	{
-		$currentSection = $_GET['Section'];
-	}
-	else
-	{
-		// TODO: Better default handling
-		$currentSection = 'introduction';
-	}
+	$currentSection = $_GET['Section'];
 	
 	// Find the current section in our model
 	$sectionIndex = 0;

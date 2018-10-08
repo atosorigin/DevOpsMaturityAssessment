@@ -6,45 +6,103 @@
 	
 	$survey = new Survey;
 	
-	// Create an array of onclick handlers for each link in the nav bar
+	// Create an array to represent the navbar buttons
+	$navBar = array (
+		'Questionaire' => array ('Url' => 'section-' . SectionNameToURLName($survey->sections[0]['SectionName']), 'Type' => 'Standard'),
+		'Sections' => array ('Type' => 'Dropdown' ),
+				// Sub-menus for each page are added here (see below)
+		'Results' => array ('Url' => 'results', 'Type' => 'Standard' ),
+		'Detailed Reports' => array ('Type' => 'Dropdown', 'Items' => array (
+				'Download CSV' => array('Url' => 'devops-maturity.csv', 'Type' => 'Standard'),
+				'Divider1' => array('Type' =>'Divider') ) ),
+				// Sub-menus for detailed reports are added here, see below
+		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) );
 	
-	// Start with each section of the survey
+	// Add the sub-menus for each page of the survey, and also for the detailed reports
 	foreach ($survey->sections as $section)
 	{
-		$sectionURL = 'section-' . SectionNameToURLName($section['SectionName']);
-		$navBarLinks[$section['SectionName']]['URL'] = $sectionURL;
-	}
-	
-	// Now add the other links
-	$navBarLinks['Questionaire']['URL'] = 'section-' . SectionNameToURLName($survey->sections[0]['SectionName']); // Link to first section
-	$navBarLinks['Results']['URL'] = 'results';
-	$navBarLinks['Download CSV']['URL'] = 'devops-maturity.csv';
-	// TODO: Make detailed reports dynamic based on config
-	$navBarLinks['Detailed Report Automation']['URL'] = 'results-automation';
-	$navBarLinks['Detailed Report DevOps Practices']['URL'] = 'results-devops-practices';
-	$navBarLinks['Detailed Report Org Structure']['URL'] = 'results-org-structure-culture-and-incentives';
-	$navBarLinks['About']['URL'] = 'about';
-	
-	// Now create the right onClick handler for each URL
-	foreach ($navBarLinks as $index=>$navBarLink)
-	{
-		$url = $navBarLink['URL'];
-		if ( $isForm )
+		$navBar['Sections']['Items'][$section['SectionName']]['Url'] = 'section-' . SectionNameToURLName($section['SectionName']);
+		$navBar['Sections']['Items'][$section['SectionName']]['Type'] = 'Standard';
+		if ( $section['HasSubCategories'] )
 		{
-			// If the page contains a form then we need to set the form action and submit
-			$onClick = "$('form').attr('action', '$url'); $('form').submit();";
+			$navBar['Detailed Reports']['Items'][$section['SectionName']]['Url'] = 'results-' . SectionNameToURLName($section['SectionName']);
+			$navBar['Detailed Reports']['Items'][$section['SectionName']]['Type'] = 'Standard';
 		}
-		else
-		{
-			// If the page is not a form then just navigate to the right URL
-			$onClick = "window.location = '$url';";
-		}
-		$navBarLinks[$index]['OnClick'] = $onClick;
 	}
 	 
 	function SectionNameToURLName($sectionName) {
 		return strtolower(str_replace(',', '', str_replace(' ', '-', $sectionName)));
 	}
+	
+	function RenderNavBarButtons($navBar)
+	{
+		foreach ($navBar as $index=>$navBarButton)
+		{
+			switch ( $navBarButton['Type'] ) {
+				case 'Standard':
+					RenderStandardNavBarButton($index, $navBarButton['Url']);
+					break;
+				case 'Dropdown':
+					RenderDropdownNavBarButton($index, $navBarButton);
+					break;
+			}
+		}
+	}
+	
+	function OnClickHandler($url)
+	{
+		global $isForm;
+		if ( $isForm )
+		{
+			// If the page contains a form then we need to set the form action and submit
+			return "$('form').attr('action', '$url'); $('form').submit();";
+		}
+		else
+		{
+			// If the page is not a form then just navigate to the right URL
+			return "window.location = '$url';";
+		}
+	}
+	
+	function RenderStandardNavBarButton($buttonText, $url)
+	{
+		// Check if this is the button for the current page, and if so style it accordingly
+		global $activePage;
+		$active = '';
+		if ($activePage == $buttonText)
+		{
+			$active = ' active';
+		}
+		?>
+		<li>
+			<a href="#" class="nav-link<?=$active?>" onclick="<?=OnClickHandler($url)?>"><?=$buttonText?></a>
+		</li>
+		<?php
+	}
+	
+	function RenderDropdownNavBarButton($buttonText, $navBarButton)
+	{
+		?>
+		<li class="navbar-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<?=$buttonText?>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<?php foreach ($navBarButton['Items'] as $index=>$dropdownItem) { 
+					switch ( $dropdownItem['Type'] ) {
+						case 'Standard': ?>
+							<a class="dropdown-item" href="#" onclick="<?=OnClickHandler($dropdownItem['Url'])?>"><?=$index?></a>
+							<?php break;
+						case 'Divider': ?>
+							<div class="dropdown-divider"></div>
+							<?php break;
+					}
+				}?>
+			</div>
+		</li>
+		<?php
+	}
+	
 ?>
 
 <!doctype html>
@@ -61,7 +119,7 @@
 		<script src="./js/chart.bundle.min.js"></script>		
 		<style>
 			#bigwrapper {
-				background-image: url('backdrop.jpg');
+				background-image: Url('backdrop.jpg');
 				background-height: 100%;
 				background-repeat: no-repeat;
 				background-position: top center;
@@ -81,35 +139,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li>
-					<a href="#" class="nav-link" onclick="<?=$navBarLinks['Questionaire']['OnClick']?>">Questionaire</a>
-				</li>
-				<li class="navbar-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Sections
-					</a>
-					<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-						<?php foreach ($survey->sections as $section) { ?>
-						<a class="dropdown-item" href="#" onclick="<?=$navBarLinks[$section['SectionName']]['OnClick']?>"><?=$section['SectionName']?></a>
-						<?php }?>
-					</div>
-				</li>
-				<li>
-					<a href="#" class="nav-link active" onclick="<?=$navBarLinks['Results']['OnClick']?>">Results</a>
-				</li>
-				<li class="navbar-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Detailed Reports</a>
-					<div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="#" onclick="<?=$navBarLinks['Download CSV']['OnClick']?>">Download CSV</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#" onclick="<?=$navBarLinks['Detailed Report Automation']['OnClick']?>">Automation</a>
-						<a class="dropdown-item" href="#" onclick="<?=$navBarLinks['Detailed Report DevOps Practices']['OnClick']?>">DevOps Practices</a>
-						<a class="dropdown-item" href="#" onclick="<?=$navBarLinks['Detailed Report Org Structure']['OnClick']?>">Org Structure, Culture and Incentivisation</a>
-					</div>
-				</li>
-				<li>
-					<a href="#" class="nav-link"  onclick="<?=$navBarLinks['About']['OnClick']?>">About</a>
-				</li>
+				<?php RenderNavBarButtons($navBar); ?>
 			</ul>
 		</div>
 	</nav>	
