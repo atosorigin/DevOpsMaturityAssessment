@@ -68,6 +68,10 @@
 			</div>
 			<?php } ?>
 		</div>
+		<!-- Show results button if we are on the final section -->
+		<?php if ($nextSection == '') { ?>
+			<button type="submit" class="btn btn-dark" onclick="$('form').attr('action', 'results');">View Results</button>
+		<?php } ?>
 	</div>
 	</div>
 	
