@@ -19,7 +19,6 @@
 	{
 		$labels .= '"' . $sectionName . '",';
 		$data .= $result['ScorePercentage'] . ',';
-		
 	}
 	
 	// Replace trailing comma with closing square bracket
@@ -29,6 +28,25 @@
 	// Now sort by highest to lowest score
 	uasort( $resultsSummary, function($a, $b) { return $b['ScorePercentage'] - $a['ScorePercentage']; } );
 	
+	// Load the "next steps" advice from json file
+	$json = file_get_contents("advice.json");
+	$advice = json_decode($json, true);
+	
+	// Routine that renders the advice and links for one section
+	function RenderAdvice($sectionName)
+	{
+		global $advice; ?>
+		
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item"><?=$advice[$sectionName]['Advice']?></li>
+			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { ?>
+				<li class="list-group-item"><b><?=$link['Type']?>:</b> <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
+			<?php } ?>						
+		</ul>
+	
+	<?php
+	} 
+
 	?>
 	
 	<div class="container-fluid">
@@ -69,13 +87,7 @@
 										<?=array_keys($resultsSummary)[0]?>
 									</h5>
 									<div class="card-body">
-										
-									
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item"><b>Video:</b> <a class="card-link" href="https://martinfowler.com/articles/extract-data-rich-service.html#Step8.PointNewServiceToTheNewDatabase">How to extract a data-rich service from a monolith</a></li>
-											<li class="list-group-item"><b>Blog:</b> <a class="card-link" href="#">How to build great teams</a></li>
-											<li class="list-group-item"><b>Book:</b> <a class="card-link" href="#">How to build great teams</a></li>
-										</ul>
+										<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
 										Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
@@ -88,13 +100,7 @@
 										<?=array_keys($resultsSummary)[1]?>
 									</h5>
 									<div class="card-body">
-										
-									
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item"><b>Video:</b> <a class="card-link" href="#">How to build great teams blah blah blah blah blah</a></li>
-											<li class="list-group-item"><b>Blog:</b> <a class="card-link" href="#">How to build great teams</a></li>
-											<li class="list-group-item"><b>Book:</b> <a class="card-link" href="#">How to build great teams</a></li>
-										</ul>
+										<?php RenderAdvice(array_keys($resultsSummary)[1]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
 										Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
@@ -110,13 +116,7 @@
 										<?=array_keys($resultsSummary)[2]?>
 									</h5>
 									<div class="card-body">
-										
-									
-										<ul class="list-group list-group-flush">
-											<li class="list-group-item"><b>Video:</b> <a class="card-link" href="#">How to build great teams</a></li>
-											<li class="list-group-item"><b>Blog:</b> <a class="card-link" href="#">How to build great teams</a></li>
-											<li class="list-group-item"><b>Book:</b> <a class="card-link" href="#">How to build great teams</a></li>
-										</ul>
+										<?php RenderAdvice(array_keys($resultsSummary)[2]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
 										Your score: <?=$resultsSummary[array_keys($resultsSummary)[2]]['ScorePercentage']?>%

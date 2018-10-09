@@ -1,0 +1,125 @@
+{
+	"//" : "Copyright 2018 Atos SE and Worldline",
+	"//" : "Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)",
+	
+	"Team Agility" : {
+		"Advice" : "Some advice on how to become more agile",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	},
+	"Collaboration" : {
+		"Advice" : "Some advice on how to become more collborative",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	},
+	"Automation" : {
+		"Advice" : "Some advice on how to do automation",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	},
+	"Architecture and Design": {
+		"Advice" : "Some advice on architecture and design for DevOps",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	},
+	"DevOps Practices" : {
+		"Advice" : "Some advice on DevOps practices",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	},
+	"Org Structure, Culture and Incentives" : {
+		"Advice" : "Some advice on org structure",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "FlacidScrum by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
+				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+			}
+		]
+	}
+}
