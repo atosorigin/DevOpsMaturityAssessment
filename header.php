@@ -13,7 +13,7 @@
 				// Sub-menus for each page are added here (see below)
 		'Results' => array ('Url' => 'results', 'Type' => 'Standard' ),
 		'Detailed Reports' => array ('Type' => 'Dropdown', 'Items' => array (
-				'Download CSV' => array('Url' => 'devops-maturity.csv', 'Type' => 'Standard'),
+				'Download CSV' => array('Url' => 'devops-maturity-csv.php', 'Type' => 'Standard'),
 				'Divider1' => array('Type' =>'Divider') ) ),
 				// Sub-menus for detailed reports are added here, see below
 		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) );

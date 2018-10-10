@@ -57,7 +57,7 @@ Class Survey
 		return $summaryResults;
 	}
 	
-	private function GetQuestionMaxScore($question)
+	public function GetQuestionMaxScore($question)
 	{
 		$maxScore = 0;
 		if ($question['Type'] != 'Banner')
@@ -81,7 +81,7 @@ Class Survey
 		return $maxScore;
 	}
 
-	private function GetQuestionScore($question)
+	public function GetQuestionScore($question)
 	{
 		$score = 0;
 		if ($question['Type'] != 'Banner')
