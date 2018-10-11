@@ -36,7 +36,15 @@
 	{
 		$previousSection = SectionnameToURLName($survey->sections[$sectionIndex - 1]['SectionName']);
 	}
-	
+?>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8 mb-4 pb-4 rounded border text-light pt-2 text-center">
+			<h3><?=$survey->sections[$sectionIndex]['SectionName']?></h3>
+		
+
+<?php	
 	// Render all the question for the current section
 	foreach ($survey->sections[$sectionIndex]['Questions'] as $index=>$question)
 	{	
@@ -44,6 +52,10 @@
 	}
 	
 	?>
+
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
 	
 	<div class="row form-group">
 	<div class="text-center col-lg-12">
@@ -76,13 +88,12 @@
 	function renderQuestion($question) { 
 		
 		?>
-		<div class="row form-group">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8">
-				<div class="card <?=$question['Type']=='Banner' ? 'bg-dark text-white' : ''?>" style="opacity: 0.7">
-					<div class="card-body my-2">
-						<h6 class="card-subtitle"> <?=$question['QuestionText']?> </h6>
 		
+				<div class="card mt-4 ml-2 mr-2 text-left 'bg-light text-dark" style="opacity: 0.9">
+					<?php if ($question['Type']!='Banner') {?>
+					<h6 class="card-header"><?=$question['QuestionText']?></h6>
+					<?php } ?>
+					<div class="card-body my-2">
 						<?php 
 							switch ($question['Type']) {
 								case 'Option':
@@ -91,13 +102,14 @@
 								case 'Checkbox':
 									renderCheckboxes($question);
 									break;
+								case 'Banner':
+									echo $question['QuestionText'];
+									break;
 							} ?>
 		
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-2"></div>
-		</div>
+				
 		
 		<?php
 	}
