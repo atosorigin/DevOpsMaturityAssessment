@@ -114,6 +114,7 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fontawesome/css/all.css" rel="stylesheet">
 
 		<title>DevOps Maturity Assessment</title>
 		<script src="./js/chart.bundle.min.js"></script>		
@@ -143,3 +144,4 @@
 			</ul>
 		</div>
 	</nav>	
+	

@@ -39,8 +39,20 @@
 		
 		<ul class="list-group list-group-flush">
 			<li class="list-group-item"><?=$advice[$sectionName]['Advice']?></li>
-			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { ?>
-				<li class="list-group-item"><b><?=$link['Type']?>:</b> <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
+			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
+				$icon = '';
+				switch ($link['Type']) {
+					case 'Video':
+						$icon = 'fa fa-video';
+						break;
+					case 'Blog':
+						$icon = 'fab fa-blogger';
+						break;
+					case 'Book':
+						$icon = 'fa fa-book';
+						break;
+				}?>
+				<li class="list-group-item"><span class="<?=$icon?> text-primary"></span>  <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
 			<?php } ?>						
 		</ul>
 	
