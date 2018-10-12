@@ -93,7 +93,7 @@
 					<?php if ($question['Type']!='Banner') {?>
 					<h6 class="card-header"><?=$question['QuestionText']?></h6>
 					<?php } ?>
-					<div class="card-body my-2">
+					<div class="card-body pt-1 pb-1">
 						<?php 
 							switch ($question['Type']) {
 								case 'Option':
