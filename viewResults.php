@@ -76,12 +76,12 @@
 		<div class="row">
 			<div class="col-lg-2"></div>
 			<div class="col-lg-8" style="opacity: 0.9 ">
-				<div class="bg-light rounded-bottom p-2 ml-2 mb-2 mr-2">
+				<div class="bg-light rounded-bottom p-4 ml-2 mb-2 mr-2">
 				
 					
 						
 						<div class="row">
-							<div class="col-lg-12 mt-2">
+							<div class="col-lg-12">
 								<p>The responses to the questionaire show that the 3 areas in which you are strongest are <?=array_keys($resultsSummary)[0]?>, <?=array_keys($resultsSummary)[1]?>, and <?=array_keys($resultsSummary)[2]?>.
 								<p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>
 							</div>
@@ -94,11 +94,11 @@
 				
 						<div class="row">
 							<div class="col-lg-6 mt-4 d-flex">
-								<div class="card"  style="flex: 1">
+								<div class="card" style="flex: 1">
 									<h5 class="card-header text-center">
 										<?=array_keys($resultsSummary)[0]?>
 									</h5>
-									<div class="card-body">
+									<div class="card-body p-1">
 										<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
@@ -111,7 +111,7 @@
 									<h5 class="card-header text-center">
 										<?=array_keys($resultsSummary)[1]?>
 									</h5>
-									<div class="card-body">
+									<div class="card-body p-1">
 										<?php RenderAdvice(array_keys($resultsSummary)[1]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
@@ -127,7 +127,7 @@
 									<h5 class="card-header text-center">
 										<?=array_keys($resultsSummary)[2]?>
 									</h5>
-									<div class="card-body">
+									<div class="card-body p-1">
 										<?php RenderAdvice(array_keys($resultsSummary)[2]) ?>
 									</div>
 									<div class="card-footer text-muted text-center">
