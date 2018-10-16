@@ -82,9 +82,16 @@
 	
 	function RenderDropdownNavBarButton($buttonText, $navBarButton)
 	{
+		// Check if this is the button for the current page, and if so style it accordingly
+		global $activePage;
+		$active = '';
+		if ($activePage == $buttonText)
+		{
+			$active = ' active';
+		}
 		?>
 		<li class="navbar-item dropdown">
-			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<a href="#" class="nav-link dropdown-toggle<?=$active?>" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$buttonText?>
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

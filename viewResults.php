@@ -4,14 +4,39 @@
 	
 	$isForm = FALSE;
 	$activePage = 'Results';
+	// Determine whether we are showing detailed results for one section
+	$sectionURL = '';
+	if ( isset($_GET['Section']) )
+	{
+		$sectionURL = $_GET['Section'];
+		$activePage = 'Detailed Reports';
+	}
+	
 	require 'header.php';
 
+	// Get either the overall results, or the results for the chosen sub-categories
+	if ( $sectionURL == '' )
+	{
+		$resultsSummary = $survey->GenerateResultsSummary();
+		// Sort into the order they should be displayed on the spider diagram
+		uasort( $resultsSummary, function($a, $b) { return $a['SpiderPos'] - $b['SpiderPos']; } );	
+		$chartTitle = 'DevOps Maturity by Area';
+	}
+	else
+	{
+		// Need to find the name of the section we want to view
+		foreach ($survey->sections as $section)
+		{
+			if ( SectionnameToURLName($section['SectionName']) == $sectionURL )
+			{
+				$sectionName = $section['SectionName'];
+			}
+		}
+		$resultsSummary = $survey->GenerateSubCategorySummary($sectionName);
+		$chartTitle = 'Breakdown for ' . $sectionName;
+	}
+	
 	// Create one variable with the labels and one with the data
-	$resultsSummary = $survey->GenerateResultsSummary();	
-	
-	// Sort into the order they should be displayed on the spider diagram
-	uasort( $resultsSummary, function($a, $b) { return $a['SpiderPos'] - $b['SpiderPos']; } );
-	
 	$labels = '[';
 	$data = '[';
 	
@@ -27,6 +52,29 @@
 	
 	// Now sort by highest to lowest score
 	uasort( $resultsSummary, function($a, $b) { return $b['ScorePercentage'] - $a['ScorePercentage']; } );
+	
+	// Now create the preamble, telling people about strengths and weaknesses
+	$preAmble = '';
+	switch ( count($resultsSummary) )
+	{
+		case 3:
+			$preAmble = '<p>Please find below links to resources that you may find useful for each of these areas.</p>';
+			break;
+		case 4:
+			$preAmble = '<p>The responses to the questionaire show that the area in which you are strongest is ' . array_keys($resultsSummary)[0] . 
+						'.</p><p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>';
+			break;
+		case 5:
+			$preAmble = '<p>The responses to the questionaire show that the 2 areas in which you are strongest are ' . array_keys($resultsSummary)[0] . 
+						' and ' . array_keys($resultsSummary)[1] . '.</p>' .
+						'<p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>';
+			break;
+		default:
+			$preAmble = '<p>The responses to the questionaire show that the 3 areas in which you are strongest are ' . array_keys($resultsSummary)[0] . 
+						', ' . array_keys($resultsSummary)[1] . ' and ' . array_keys($resultsSummary)[2] . '.</p>' .
+						'<p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>';
+			break;
+	}
 	
 	// Load the "next steps" advice from json file
 	$json = file_get_contents("advice.json");
@@ -49,10 +97,13 @@
 						$icon = 'fab fa-blogger';
 						break;
 					case 'Book':
-						$icon = 'fa fa-book';
+						$icon = 'fas fa-book-open';
 						break;
+					case 'Website':
+						$icon = 'fas fa-link';
+						break;	
 				}?>
-				<li class="list-group-item"><span class="<?=$icon?> text-primary"></span>  <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
+				<li class="list-group-item"><span class="<?=$icon?> text-primary"></span></i>  <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
 			<?php } ?>						
 		</ul>
 	
@@ -82,8 +133,7 @@
 						
 						<div class="row">
 							<div class="col-lg-12">
-								<p>The responses to the questionaire show that the 3 areas in which you are strongest are <?=array_keys($resultsSummary)[0]?>, <?=array_keys($resultsSummary)[1]?>, and <?=array_keys($resultsSummary)[2]?>.
-								<p>The 3 areas where you have the most potential to improve are listed below, together with links to resources that you may find useful.</p>
+								<?=$preAmble?>
 							</div>
 						</div>
 				
@@ -171,7 +221,7 @@
 					responsive: true,
 					title: {
 						display: true,
-						text: 'DevOps Maturity by Area',
+						text: '<?=$chartTitle?>',
 						fontSize: 16,
 						fontColor: "white"
 					},
@@ -212,174 +262,6 @@
 				}
 		}
 	);
-
-
-new Chart(document.getElementById("chartDevOpsPractices"), {
-    type: 'polarArea',
-    data: {
-      labels: ["CI", "CD", "Code Review", "TDD"],
-      datasets: [
-        {
-          label: "",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [50,20,70,100]
-        }
-      ]
-    },
-    options: {
-				responsive: true,
-				title: {
-					display: true,
-					text: 'Deep Dive on DevOps Practices',
-					fontSize: 16,
-					fontColor: "white"
-				},
-				tooltips: {
-					custom: function(tooltip) {
-						if (!tooltip) return;
-						// disable displaying the color box;
-						tooltip.displayColors = false;
-					},
-					callbacks: {
-						label: function(tooltipItem, data) {
-							return tooltipItem.yLabel + '%';
-						}
-					}
-				},
-				legend: {
-					display: true
-				},
-				scaleShowLabels: true,
-				scale: {
-					ticks: {
-						display: false,
-						beginAtZero: true,
-						stepSize: 25,
-						callback: function(value, index, values) {
-							return value + '%';
-						}
-					},
-					pointLabels: {
-						fontSize: 14,
-						fontColor: "white"
-					},
-					gridLines: { color: "white" },
-					angleLines: { color: "white" }, 
-				}
-			}
-	});
-
-
-new Chart(document.getElementById("chartAutomation"), {
-    type: 'polarArea',
-    data: {
-      labels: ["CI", "CD", "Code Review", "TDD", "Refactoring"],
-      datasets: [
-        {
-          label: "",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [50,20,70,100, 30]
-        }
-      ]
-    },
-    options: {
-				responsive: true,
-				title: {
-					display: true,
-					text: 'Deep Dive on Automation',
-					fontSize: 16,
-					fontColor: "white"
-				},
-				tooltips: {
-					custom: function(tooltip) {
-						if (!tooltip) return;
-						// disable displaying the color box;
-						tooltip.displayColors = false;
-					},
-					callbacks: {
-						label: function(tooltipItem, data) {
-							return tooltipItem.yLabel + '%';
-						}
-					}
-				},
-				legend: {
-					display: true
-				},
-				scaleShowLabels: true,
-				scale: {
-					ticks: {
-						display: false,
-						beginAtZero: true,
-						stepSize: 25,
-						callback: function(value, index, values) {
-							return value + '%';
-						}
-					},
-					pointLabels: {
-						fontSize: 14,
-						fontColor: "white"
-					},
-					gridLines: { color: "white" },
-					angleLines: { color: "white" }, 
-				}
-			}
-	});
-
-new Chart(document.getElementById("chartOrgStructure"), {
-    type: 'polarArea',
-    data: {
-      labels: ["CI", "CD", "Code Review", "TDD", "Refactoring"],
-      datasets: [
-        {
-          label: "",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [50,20,70,100, 30]
-        }
-      ]
-    },
-    options: {
-				responsive: true,
-				title: {
-					display: true,
-					text: 'Deep Dive on Organisation Structure and Culture',
-					fontSize: 16,
-					fontColor: "white"
-				},
-				tooltips: {
-					custom: function(tooltip) {
-						if (!tooltip) return;
-						// disable displaying the color box;
-						tooltip.displayColors = false;
-					},
-					callbacks: {
-						label: function(tooltipItem, data) {
-							return [data.labels[tooltipItem.index], tooltipItem.yLabel + '%'];
-						}
-					}
-				},
-				legend: {
-					display: true
-				},
-				scaleShowLabels: true,
-				scale: {
-					ticks: {
-						display: false,
-						beginAtZero: true,
-						stepSize: 25,
-						callback: function(value, index, values) {
-							return value + '%';
-						}
-					},
-					pointLabels: {
-						fontSize: 14,
-						fontColor: "white"
-					},
-					gridLines: { color: "white" },
-					angleLines: { color: "white" }, 
-				}
-			}
-	});
- 
 
 </script>
 	

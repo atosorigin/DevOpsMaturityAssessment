@@ -57,6 +57,39 @@ Class Survey
 		return $summaryResults;
 	}
 	
+	// returns summary results for the sub-categories in a specified section
+	public function GenerateSubCategorySummary($sectionName)
+	{
+		foreach ($this->sections as $section)
+		{
+			if ( $section['SectionName'] == $sectionName )
+			{
+				foreach ($section['Questions'] as $question)
+				{
+					if ( isset($question['SubCategory']) )
+					{
+						if ( !isset($summaryResults[$question['SubCategory']]) )
+						{
+							// If we haven't yet added an entry into the summary results for this sub-category, then add one
+							$summaryResults[$question['SubCategory']] = array('MaxScore'=>0, 'Score'=>0, 'ScorePercentage'=>0);
+						}
+						
+						$summaryResults[$question['SubCategory']]['MaxScore'] += $this->GetQuestionMaxScore($question); 
+						$summaryResults[$question['SubCategory']]['Score'] += $this->GetQuestionScore($question);
+					}
+				}
+			}
+		}
+		
+		foreach ($summaryResults as &$subCategory)
+		{
+			$subCategory['ScorePercentage'] = 
+					round( $subCategory['Score'] / $subCategory['MaxScore'] * 100);	
+		}
+		
+		return $summaryResults;
+	}
+	
 	public function GetQuestionMaxScore($question)
 	{
 		$maxScore = 0;
