@@ -28,12 +28,14 @@
 			{
 				"Type" : "Book",
 				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364",
+				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
 				"Text" : "Kanban: Successful Evolutionary Change for Your Technology Business by David Anderson",
-				"Href" : "https://www.amazon.co.uk/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402"
+				"Href" : "https://www.amazon.co.uk/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402",
+				"Paid" : "Yes"
 			}
 		]
 	},
@@ -208,7 +210,8 @@
 			{
 				"Type" : "Website",
 				"Text" : "Clean Coders",
-				"Href" : "https://cleancoders.com/"
+				"Href" : "https://cleancoders.com/",
+				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Video",
