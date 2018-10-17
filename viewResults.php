@@ -101,7 +101,10 @@
 						break;
 					case 'Website':
 						$icon = 'fas fa-link';
-						break;	
+						break;
+					case 'Article':
+						$icon = 'fas fa-file-alt';
+						break;							
 				}
 				$paidIcon = '';
 				if ( isset($link['Paid']) and $link['Paid'] == 'Yes' )

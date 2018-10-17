@@ -67,40 +67,16 @@
 	"Automation" : {
 		"Advice" : "Some advice on how to do automation",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+
 		]
 	},
 	"Architecture and Design": {
 		"Advice" : "Some advice on architecture and design for DevOps",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Type" : "Website",
+				"Text" : "The Twelve-Factor App",
+				"Href" : "https://12factor.net/"
 			}
 		]
 	},
@@ -108,19 +84,9 @@
 		"Advice" : "Some advice on DevOps practices",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
 				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Text" : "Lean from the Trenches by Henrik Kniberg",
+				"Href" : "https://www.crisp.se/file-uploads/Lean-from-the-trenches.pdf"
 			}
 		]
 	},
@@ -128,39 +94,15 @@
 		"Advice" : "Some advice on org structure",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+				"Type" : "Article",
+				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
+				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
-		]
-	},
-	"DevOps Practices" : {
-		"Advice" : "Some advice on DevOps practices",
-		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Text" : "The Phoenix Project by Gene Kim, Kevin Behr and George Spafford",
+				"Href" : "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592",
+				"Paid" : "Yes"
 			}
 		]
 	},
@@ -168,40 +110,17 @@
 		"Advice" : "Some advice on CI",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
 				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Text" : "Leading the Transformation: Applying Agile and DevOps Principles at Scale by Gary Gruver",
+				"Href" : "https://www.amazon.co.uk/Leading-Transformation-Applying-Devops-Principles/dp/1942788010/",
+				"Paid" : "Yes"
 			}
 		]
 	},
 	"CD" : {
 		"Advice" : "Some advice on CD",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"TDD" : {
@@ -212,177 +131,77 @@
 				"Text" : "Clean Coders",
 				"Href" : "https://cleancoders.com/",
 				"Paid" : "Yes"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
 			}
 		]
 	},
 	"Code Review" : {
 		"Advice" : "Some advice on Code Review",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Refactoring" : {
 		"Advice" : "Some advice on refactoring",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Environments" : {
 		"Advice" : "Some advice on automating environments",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Testing" : {
 		"Advice" : "Some advice on Test Automation",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Static Analysis" : {
 		"Advice" : "Some advice on static analysis",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Organisation Structure" : {
 		"Advice" : "Some advice on org structure",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	},
 	"Culture" : {
 		"Advice" : "Some advice on culture",
 		"Links" : [
 			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
+				"Type" : "Book",
+				"Text" : "Tribal Leadership Revised Edition: Leveraging Natural Groups to Build a Thriving Organization",
+				"Href" : "https://www.amazon.co.uk/Tribal-Leadership-Leveraging-Thriving-Organization/dp/0061251321/",
+				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
+				"Text" : "Tribal Unity: Getting from Teams to Tribes by Creating a One Team Culture by Em Campbell-Pretty",
+				"Href" : "https://www.amazon.co.uk/Tribal-Unity-Getting-Creating-Culture/dp/1537347578/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Open Organization by Jim Whitehurst",
+				"Href" : "https://www.amazon.co.uk/Open-Organization-Igniting-Passion-Performance/dp/1625275277/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Open Organization Field Guide",
+				"Href" : "https://opensource.com/open-organization/resources/field-guide"
 			}
 		]
 	},
 	"Incentivisation" : {
 		"Advice" : "Some advice on incentivisation",
 		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "FlacidScrum by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/FlaccidScrum.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (43 minutes)",
-				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
-				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364"
-			}
+			
 		]
 	}
 }
