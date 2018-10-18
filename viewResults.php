@@ -83,10 +83,20 @@
 	// Routine that renders the advice and links for one section
 	function RenderAdvice($sectionName)
 	{
-		global $advice; ?>
+		global $advice, $survey;
+		
+		// If we are providing advice for a section that has sub categories, then include a link to teh detailed report
+		$detailedReportLink = '';
+		if ( $survey->sections[$survey->SectionNameToIndex($sectionName)]['HasSubCategories'] )
+		{
+			$detailedReportLink = '</p><p>See also <a href="results-' . SectionNameToURLName($sectionName) . '">detailed report for ' .
+									$sectionName . '</a>.';
+		}
+		
+		?>
 		
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><?=$advice[$sectionName]['Advice']?></li>
+			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $detailedReportLink?></p></li>
 			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
 				$icon = '';
 				switch ($link['Type']) {

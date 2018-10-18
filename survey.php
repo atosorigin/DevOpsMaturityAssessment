@@ -131,6 +131,20 @@ Class Survey
 		return $score;
 	}
 	
+	public function SectionNameToIndex($sectionName)
+	{
+		$sectionIndex = 0;
+		foreach ($this->sections as $index=>$section)
+		{
+			if ( $section['SectionName'] == $sectionName )
+			{
+				$sectionIndex = $index;
+				break;
+			}
+		}
+		return $sectionIndex;
+	}
+	
 	private function SetupAnswerIDs()
 	{	
 		// Loop through the model and assign a unique ID to each question and answer to assist with form rendering and submission
