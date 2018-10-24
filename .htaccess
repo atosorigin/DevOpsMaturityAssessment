@@ -2,7 +2,8 @@
 # Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)
 
 RewriteEngine On # Turn on the rewriting engine
-RewriteRule		^$					collectResponses.php?Section=introduction [NC,L]
+RewriteRule		^$					about.php [NC,L]
 RewriteRule		^section-(.*)$		collectResponses.php?Section=$1	[NC,L]
 RewriteRule		^results$			viewResults.php	[NC,L]
 RewriteRule		^results-(.*)$		viewResults.php?Section=$1	[NC,L]
+RewriteRule		^about$				about.php	[NC,L]

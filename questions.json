@@ -102,11 +102,11 @@
 			{
 				"Type" : "Checkbox",
 				"SubCategory" : "Environments",
-				"QuestionText" : "Is the provisioning, configuration and management of environments automated (tick all that apply)?",
+				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Yes, for VMs", "Score" : 1},
-					{"Answer" : "Yes, for the application stack", "Score" : 1},
-					{"Answer" : "Yes, for the application", "Score" : 1}
+					{"Answer" : "Virtual machine(s)", "Score" : 1},
+					{"Answer" : "The application stack", "Score" : 1},
+					{"Answer" : "The application", "Score" : 1}
 					]
 			},
 			{

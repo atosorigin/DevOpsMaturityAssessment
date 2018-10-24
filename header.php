@@ -128,12 +128,18 @@
 		<style>
 			#bigwrapper {
 				background-image: Url('backdrop.jpg');
-				background-height: 100%;
 				background-repeat: no-repeat;
 				background-position: top center;
 				background-attachment: fixed;
-				padding-top: 100px;
+				backgroun-size: cover;
+				background-color: RGB(2, 2, 1);
+				padding-top: 70px;
 			}
+		
+			@media (max-width: 355px) { 
+				#bigwrapper { padding-top: 100px; }
+			}
+		
 		</style>
 		
 	</head>
@@ -141,7 +147,7 @@
 	<body id="bigwrapper">
 
 	<nav class="navbar navbar-default navbar-dark fixed-top navbar-expand-md form-group" style="background-color: #000000;">
-		<a href="#" class="navbar-brand">DevOps Maturity Assesment</a>
+		<a href="about" class="navbar-brand">DevOps Maturity Assesment</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
