@@ -122,7 +122,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Environments",
-				"QuestionText" : "Is the provisioning, configuration and management of environments automated (tick all that apply)?",
+				"QuestionText" : "Is the provisioning, configuration and management of environments automated?",
 				"Answers" : [
 					{"Answer" : "Yes, and scaling is automatic", "Score" : 2},
 					{"Answer" : "Yes, but scaling is manual", "Score" : 1},
