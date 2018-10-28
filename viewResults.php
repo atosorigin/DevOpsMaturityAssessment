@@ -122,6 +122,7 @@
 					$paidIcon = '  <span class="fas fa-dollar-sign text-primary"></span>';
 				}
 				?>
+				
 				<li class="list-group-item"><span class="<?=$icon?> text-primary"></span><?=$paidIcon?>  <a class="card-link" target="_blank" href="<?=$link['Href']?>"><?=$link['Text']?></a></li>
 			<?php } ?>						
 		</ul>
@@ -134,22 +135,16 @@
 	<div class="container-fluid">
 		
 		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8" style="opacity: 1">
-				<div class="rounded-top p-2 ml-2 mt-2 mr-2 border-top border-left border-right" style="opacity: 0.6; background-color: #000000;">
+			<div class="col-xl-9 col-lg-11 pb-0 rounded text-center text-light mx-auto">
+				<div class="rounded-top p-2 ml-2 mt-2 mr-2 border-primary border-top border-left border-right" style="opacity: 0.6; background-color: #000000;">
 					<canvas  id="chartOverallResults"></canvas>
 				</div>
 			</div>
-			<div class="col-lg-2"></div>
 		</div>
 		
 		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-8" style="opacity: 0.9 ">
-				<div class="bg-light rounded-bottom p-4 ml-2 mb-2 mr-2">
-				
-					
-						
+			<div class="col-xl-9 col-lg-11  pt-0 pb-4 rounded text-left mx-auto">
+				<div class="bg-light rounded-bottom p-4 border-primary border ml-2 mb-2 mr-2">
 						<div class="row">
 							<div class="col-lg-12">
 								<?=$preAmble?>
@@ -162,44 +157,44 @@
 						?>
 				
 						<div class="row">
-							<div class="col-lg-6 mt-4 d-flex">
-								<div class="card" style="flex: 1">
-									<h5 class="card-header text-center">
-										<?=array_keys($resultsSummary)[0]?>
-									</h5>
-									<div class="card-body p-1">
-										<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
+							<div class="col-lg-12 mt-4">
+								<div class="card-deck">
+									<div class="card border-primary">
+										<h5 class="card-header text-center text-white bg-primary">
+											<?=array_keys($resultsSummary)[0]?>
+										</h5>
+										<div class="card-body p-1">
+											<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
+										</div>
+										<div class="card-footer text-center text-white bg-primary">
+											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
+										</div>
 									</div>
-									<div class="card-footer text-muted text-center">
-										Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 mt-4 d-flex">
-								<div class="card"  style="flex: 1">
-									<h5 class="card-header text-center">
-										<?=array_keys($resultsSummary)[1]?>
-									</h5>
-									<div class="card-body p-1">
-										<?php RenderAdvice(array_keys($resultsSummary)[1]) ?>
-									</div>
-									<div class="card-footer text-muted text-center">
-										Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
+									<div class="card border-primary">
+										<h5 class="card-header text-center text-white bg-primary">
+											<?=array_keys($resultsSummary)[1]?>
+										</h5>
+										<div class="card-body p-1">
+											<?php RenderAdvice(array_keys($resultsSummary)[1]) ?>
+										</div>
+										<div class="card-footer text-center text-white bg-primary">
+											Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					
 						<div class="row">
-							<div class="col-lg-12 mt-4 d-flex">
-								<div class="card" style="flex: 1">
-									<h5 class="card-header text-center">
+							<div class="col-lg-12 mt-4">
+								<div class="card border-primary">
+									<h5 class="card-header text-center text-white bg-primary">
 										<?=array_keys($resultsSummary)[2]?>
 									</h5>
 									<div class="card-body p-1">
 										<?php RenderAdvice(array_keys($resultsSummary)[2]) ?>
 									</div>
-									<div class="card-footer text-muted text-center">
+									<div class="card-footer text-center text-white bg-primary">
 										Your score: <?=$resultsSummary[array_keys($resultsSummary)[2]]['ScorePercentage']?>%
 									</div>
 								</div>
@@ -210,7 +205,7 @@
 					
 				</div>
 			</div>
-			<div class="col-lg-2"></div>
+
 			
 		
 		</div>

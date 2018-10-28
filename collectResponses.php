@@ -39,8 +39,7 @@
 ?>
 
 	<div class="row">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-8 mb-4 pb-4 rounded border text-light pt-2 text-center">
+		<div class="col-xl-9 col-lg-11 m-2 pb-4 rounded text-center text-light mx-auto">
 			<h3><?=$survey->sections[$sectionIndex]['SectionName']?></h3>
 		
 
@@ -54,7 +53,7 @@
 	?>
 
 		</div>
-		<div class="col-lg-2"></div>
+
 	</div>
 	
 	<div class="row form-group">
@@ -62,18 +61,18 @@
 		<div class="btn-group btn-group-justified">
 			<?php if ($previousSection != '') { ?>
 			<div class="btn-group">
-				<button type="submit" class="btn btn-dark" onclick="$('form').attr('action', 'section-<?=$previousSection?>');">Previous</button>
+				<button type="submit" class="btn btn-primary" onclick="$('form').attr('action', 'section-<?=$previousSection?>');">Previous</button>
 			</div>
 			<?php } ?>
 			<?php if ($nextSection != '') { ?>
 			<div class="btn-group" role="group">
-				<button type="submit" class="btn btn-dark" onclick="$('form').attr('action', 'section-<?=$nextSection?>');">Next</button>
+				<button type="submit" class="btn btn-primary" onclick="$('form').attr('action', 'section-<?=$nextSection?>');">Next</button>
 			</div>
 			<?php } ?>
 		</div>
 		<!-- Show results button if we are on the final section -->
 		<?php if ($nextSection == '') { ?>
-			<button type="submit" class="btn btn-dark" onclick="$('form').attr('action', 'results');">View Results</button>
+			<button type="submit" class="btn btn-primary" onclick="$('form').attr('action', 'results');">View Results</button>
 		<?php } ?>
 	</div>
 	</div>
@@ -89,11 +88,11 @@
 		
 		?>
 		
-				<div class="card mt-4 ml-2 mr-2 text-left 'bg-light text-dark" style="opacity: 0.9">
+				<div class="card mt-4 ml-2 mr-2 text-left bg-dark border-primary border">
 					<?php if ($question['Type']!='Banner') {?>
 					<h6 class="card-header"><?=$question['QuestionText']?></h6>
 					<?php } ?>
-					<div class="card-body pt-1 pb-1">
+					<div class="card-body pt-1 pb-1 bg-gradient-secondary">
 						<?php 
 							switch ($question['Type']) {
 								case 'Option':
