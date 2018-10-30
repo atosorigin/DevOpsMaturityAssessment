@@ -50,7 +50,7 @@
 	},
 	{
 		"SectionName" : "Collaboration",
-		"SpiderPos" : 6,
+		"SpiderPos" : 7,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -201,7 +201,7 @@
 	},
 	{
 		"SectionName" : "Architecture and Design",
-		"SpiderPos" : 4,
+		"SpiderPos" : 5,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -241,7 +241,7 @@
 	},
 	{
 		"SectionName" : "DevOps Practices",
-		"SpiderPos" : 5,
+		"SpiderPos" : 6,
 		"Questions" : [
 			{
 				"Type" : "Checkbox",
@@ -422,6 +422,39 @@
 				"Type" : "Option",
 				"SubCategory" : "Culture",
 				"QuestionText" : "Does the team have a feedback culture (where people are happy to quickly share negative and positive feedback)?"
+			}
+		]
+	},
+	{
+		"SectionName" : "Standardisation",
+		"SpiderPos" : 5,
+		"Questions" : [
+			{
+				"Type" : "Checkbox",
+				"QuestionText" : "Does the team have a defined set of tooling standards (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
+					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
+					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
+					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable v mutable)", "Score" : 1}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
+				"Answers" : [
+					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
+					{"Answer" : "Yes, but with an insufficeint portfolio of options to meet our development needs", "Score" : 1},
+					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Do you make best use of SaaS (Software as a Service) for utility applcations (i.e. ones not used for competitive advantage such as version control)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service) and IaaS (Infrastructure as a Service)?"
 			}
 		]
 	}
