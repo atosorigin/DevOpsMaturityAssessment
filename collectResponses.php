@@ -88,7 +88,7 @@
 		
 		?>
 		
-				<div class="card mt-4 ml-2 mr-2 text-left bg-dark border-primary border">
+				<div class="card mt-4  ml-sm-2 ml-xs-0 mr-sm-2 mr-xs-0 text-left bg-dark border-primary border">
 					<?php if ($question['Type']!='Banner') {?>
 					<h6 class="card-header"><?=$question['QuestionText']?></h6>
 					<?php } ?>

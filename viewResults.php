@@ -136,7 +136,7 @@
 		
 		<div class="row">
 			<div class="col-xl-9 col-lg-11 pb-0 rounded text-center text-light mx-auto">
-				<div class="rounded-top p-2 ml-2 mt-2 mr-2 border-primary border-top border-left border-right" style="opacity: 0.6; background-color: #000000;">
+				<div class="rounded-top p-2 ml-sm-2 ml-xs-2 mt-2 mr-sm-2 mr-xs-2 border-primary border-top border-left border-right" style="opacity: 0.6; background-color: #000000;">
 					<canvas  id="chartOverallResults"></canvas>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 		
 		<div class="row">
 			<div class="col-xl-9 col-lg-11  pt-0 pb-4 rounded text-left mx-auto">
-				<div class="bg-light rounded-bottom p-4 border-primary border ml-2 mb-2 mr-2">
+				<div class="bg-light rounded-bottom p-2 p-sm-4 border-primary border ml-sm-2 ml-xs-2 mb-2 mr-sm-2 mr-xs-2">
 						<div class="row">
 							<div class="col-lg-12">
 								<?=$preAmble?>
@@ -157,7 +157,7 @@
 						?>
 				
 						<div class="row">
-							<div class="col-lg-12 mt-4">
+							<div class="col-lg-12 mt-1">
 								<div class="card-deck">
 									<div class="card border-primary">
 										<h5 class="card-header text-center text-white bg-primary">
@@ -186,7 +186,7 @@
 						</div>
 					
 						<div class="row">
-							<div class="col-lg-12 mt-4">
+							<div class="col-lg-12 mt-sm-4">
 								<div class="card border-primary">
 									<h5 class="card-header text-center text-white bg-primary">
 										<?=array_keys($resultsSummary)[2]?>
