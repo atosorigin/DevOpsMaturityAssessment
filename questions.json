@@ -54,7 +54,7 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?"
+				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?" // Add some options
 			},
 			{
 				"Type" : "Option",
@@ -66,11 +66,11 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are people on the team willing to work outside their usual specialism?"
+				"QuestionText" : "Are people on the team willing to work outside their usual specialism?" // Everyone, some, no-one (yes, yes if arms are twisted)
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team have a bias towards the most immediate (information rich) comunication method available (e.g. voice call instead rather than email)?"
+				"QuestionText" : "Do people on the team have a preference towards the most immediate (information rich) comunication method available (e.g. voice call rather than email)?" // Everyone, some, no-one
 			},
 			{
 				"Type" : "Option",
@@ -78,11 +78,11 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are there rarely misunderstandings between members of the team?"
+				"QuestionText" : "How frequently are their misunderstandings between members of the team?" // Time options
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?"
+				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?" All thetime, sometimes, never.
 			}
 		]
 	},
@@ -240,6 +240,7 @@
 		]
 	},
 	{
+		// Add question of do you measure: Delivery Lead Time, Deployment frequency, Time to restore service (MTTR), Change fail rate 
 		"SectionName" : "DevOps Practices",
 		"SpiderPos" : 5,
 		"Questions" : [
