@@ -28,7 +28,12 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team take actions to ensure that the team does not create or experience bottlenecks with/for other teams?"
+				"QuestionText" : "Does the team take actions to ensure that the team does not create or experience bottlenecks with/for other teams?",
+				"Answers" : [
+					{"Answer" : "Yes, and the actions are effective", "Score" : 1},
+					{"Answer" : "Yes, but the actions are not always effective", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -43,8 +48,14 @@
 				"QuestionText" : "Are the most experienced team members are allocated last so they can help develop cross functional skills and be free to resolve the most complex problems?"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have fast feedback loops from testers, customers, users and the product owner?"
+				"Type" : "Checkbox",
+				"QuestionText" : "Does the team have fast feedback loops in place (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "From testers: usually less than 1 hour", "Score" : 0.5},
+					{"Answer" : "From the product owner: usually less than 1 day", "Score" : 0.5},
+					{"Answer" : "From customers: usually less than 1 week", "Score" : 0.5},
+					{"Answer" : "From end users: usually less than 1 week", "Score" : 0.5}
+					]
 			}
 		]
 	},
