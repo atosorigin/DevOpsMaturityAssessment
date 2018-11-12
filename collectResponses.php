@@ -39,7 +39,7 @@
 ?>
 
 	<div class="row">
-		<div class="col-xl-9 col-lg-11 m-2 pb-4 rounded text-center text-light mx-auto">
+		<div class="col-xl-9 col-lg-11 m-2 pb-4 rounded text-center text-dark mx-auto">
 			<h3><?=$survey->sections[$sectionIndex]['SectionName']?></h3>
 		
 
@@ -88,7 +88,7 @@
 		
 		?>
 		
-				<div class="card mt-4  ml-sm-2 ml-xs-0 mr-sm-2 mr-xs-0 text-left bg-dark border-primary border">
+				<div class="card mt-4  ml-sm-2 ml-xs-0 mr-sm-2 mr-xs-0 text-dark text-left bg-light border-primary border">
 					<?php if ($question['Type']!='Banner') {?>
 					<h6 class="card-header"><?=$question['QuestionText']?></h6>
 					<?php } ?>

@@ -127,18 +127,13 @@
 		<script src="./js/chart.bundle.min.js"></script>		
 		<style>
 			#bigwrapper {
-				background-image: Url('backdrop.jpg');
-				background-repeat: no-repeat;
-				background-position: top center;
-				background-attachment: fixed;
-				backgroun-size: cover;
-				background-color: RGB(2, 2, 1);
+				background-color: RGB(255, 255, 255);
 				padding-top: 70px;
 			}
 		
 			@media (max-width: 355px) { 
 				#bigwrapper { padding-top: 100px; }
-			}
+			} 	
 		
 		</style>
 		

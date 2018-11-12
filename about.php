@@ -38,7 +38,7 @@
 	<div class="col-xl-9 col-lg-11 m-2 pb-4 rounded text-center text-light mx-auto">
 	
 
-			<section class="jumbotron text-center bg-dark border-primary border">
+			<section class="jumbotron text-center text-dark bg-light border-primary border">
 				<div class="container">
 					<h1 class="jumbotron-heading">Improve Your DevOps Capability</h1>
 					<p class="lead">This online DevOps Maturity Assessment questionaire will help you understand your current strengths and weeknesses and then recommend resources that can support you in taking the next steps on your DevOps journey.</p>
@@ -50,10 +50,10 @@
 			</section>
 		
 			<!-- Three columns of text below the jumbotron -->
-			<div class="row">
+			<div class="row text-dark">
 			
 				<div class="col-lg-4">
-					<span class="fa-stack fa-5x mb-4">
+					<span class="fa-stack fa-5x mb-4 text-light">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="far fa-chart-bar fa-stack-1x"></i>
 					</span>
@@ -63,7 +63,7 @@
 				</div><!-- /.col-lg-4 -->
 			
 				<div class="col-lg-4">
-					<span class="fa-stack fa-5x mb-4">
+					<span class="fa-stack fa-5x mb-4 text-light">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-shoe-prints fa-stack-1x"></i>
 					</span>
@@ -73,7 +73,7 @@
 		  
 
 				<div class="col-lg-4">
-					<span class="fa-stack fa-5x mb-4">
+					<span class="fa-stack fa-5x mb-4 text-light">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-lock-open fa-stack-1x"></i>
 					</span>
@@ -90,7 +90,7 @@
 				</div>
 			</div>
 		  
-			<section class="jumbotron text-center border border-primary bg-dark mt-2">
+			<section class="jumbotron text-dark text-center border border-primary bg-light mt-2">
 				<div class="container">
 					<h1 class="jumbotron-heading">Meet The Team</h1>
 					<p class="lead">This tool was created by members of the Atos Expert Community with contributions from many other practitioners accross Atos and Worldline globally. You can find out more about the core team below.	</p>
@@ -99,49 +99,49 @@
 		  
 			<div class="row">
 			
-				<div class="col-lg-12">
+				<div class="col-lg-12 text-dark border-0">
 					
 					<div class="card-deck">
 					
-						<div class="card bg-transparent text-center">
+						<div class="card bg-transparent text-center border-0">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/CBH.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle mb-2" src="team-photos/CBH.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							<div class="card-body pb-0 pt-0">
 								<h6>Chris Baynham-Hughes</h6>	
 								<p class="small">Head of UK Business Development RedHat Emerging Technologies & DevOps at Atos</p>
 							</div>
-							<div class="card-footer text-center pt-0">
+							<div class="card-footer text-center pt-0 border-0  bg-white">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/chrisbh/')?>
 								<?=RenderTwitterLink('https://twitter.com/OnlyChrisBH')?>	
 							</div>
 						</div>
 
 	
-						<div class="card bg-transparent text-center">
+						<div class="card bg-transparent text-center border-0 bg-white">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/JC.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle mb-2" src="team-photos/JC.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							
 							<div class="card-body  pb-0 pt-0">
 								<h6>John Chatterton</h6>
 								<p class="small">Principal Enterprise Architect at Atos</p>
 							</div>
-							<div class="card-footer text-center pt-0">
+							<div class="card-footer text-center pt-0 border-0 bg-white">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/john-chatterton-73940a9/')?>
 							</div>
 						</div>
 
 		
-						<div class="card bg-transparent text-center">
+						<div class="card bg-transparent text-center border-0">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/DD.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle mb-2" src="team-photos/DD.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							<div class="card-body  pb-0 pt-0">
 								<h6>David Daly</h6>								
 								<p class="small">Global Deal Assurance Manager at Worldline</p>
 							</div>
-							<div class="card-footer text-center pt-0">
+							<div class="card-footer text-center pt-0 border-0 bg-white">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/david-daly-fbcs-citp-7a84775/')?>
 								<?=RenderTwitterLink('https://twitter.com/DavidDalyWL')?>
 							</div>
@@ -159,31 +159,31 @@
 					
 					<div class="card-deck">
 					
-						<div class="card bg-transparent text-center">
+						<div class="card bg-transparent text-dark text-center border-0">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/PT.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle mb-2" src="team-photos/PT.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							<div class="card-body pb-0 pt-0">
 								<h6>Panagiotis Tamtamis</h6>	
 								<p class="small">Senior Software Engineer at Atos</p>
 							</div>
-							<div class="card-footer text-center pt-0">
+							<div class="card-footer text-center pt-0 border-0 bg-white">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/panagiotis-tamtamis-2441a419/')?>
 								<?=RenderTwitterLink('https://twitter.com/PTamis')?>	
 							</div>
 						</div>
 
 	
-						<div class="card bg-transparent text-center">
+						<div class="card bg-transparent text-dark text-center border-0">
 							<div class="text-center">
-								<img class="rounded-circle border border-primary mb-2" src="team-photos/DU.jpg" alt="Generic placeholder image" width="140" height="140">
+								<img class="rounded-circle mb-2" src="team-photos/DU.jpg" alt="Generic placeholder image" width="140" height="140">
 							</div>
 							
 							<div class="card-body  pb-0 pt-0">
 								<h6>Dan Usher</h6>
 								<p class="small">Head of Transformation, Digital Self Service at Worldline UK&I</p>
 							</div>
-							<div class="card-footer text-center pt-0">
+							<div class="card-footer text-center pt-0 border-0 bg-white">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/daniel-usher-49198310/')?>
 								<?=RenderTwitterLink('https://twitter.com/UsherDL')?>
 							</div>

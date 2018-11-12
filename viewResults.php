@@ -136,7 +136,7 @@
 		
 		<div class="row">
 			<div class="col-xl-9 col-lg-11 pb-0 rounded text-center text-light mx-auto">
-				<div class="rounded-top p-2 ml-sm-2 ml-xs-2 mt-2 mr-sm-2 mr-xs-2 border-primary border-top border-left border-right" style="opacity: 0.6; background-color: #000000;">
+				<div class="rounded-top p-2 ml-sm-2 ml-xs-2 mt-2 mr-sm-2 mr-xs-2 border-primary border-top border-left border-right">
 					<canvas  id="chartOverallResults"></canvas>
 				</div>
 			</div>
@@ -226,9 +226,9 @@
 				pointStyle: 'circle',
 				pointRadius: 5,
 				data: <?=$data?>,
-				pointBackgroundColor: 'rgba(99,255,132,1)',
-				backgroundColor: 'rgba(99, 255, 132, 0.2)',
-				borderColor: 'rgba(99,255,132,1)'
+				pointBackgroundColor: '#00314c',
+				backgroundColor: 'rgba(0, 104, 160, 0.2)',
+				borderColor: '#00314c'
 				}]
 		},
 		options: {
@@ -237,7 +237,7 @@
 						display: true,
 						text: '<?=$chartTitle?>',
 						fontSize: 16,
-						fontColor: "white"
+						fontColor: "black"
 					},
 					tooltips: {
 						custom: function(tooltip) {
@@ -268,10 +268,10 @@
 						},
 						pointLabels: {
 							fontSize: 14,
-							fontColor: "white"
+							fontColor: "black"
 						},
-						gridLines: { color: "white" },
-						angleLines: { color: "white" }, 
+						gridLines: { color: "#0068a0" },
+						angleLines: { color: "#0068a0" }, 
 					}
 				}
 		}
