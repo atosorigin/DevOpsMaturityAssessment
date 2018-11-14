@@ -51,10 +51,10 @@
 				"Type" : "Checkbox",
 				"QuestionText" : "Does the team have fast feedback loops in place (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "From testers: usually less than 1 hour", "Score" : 0.5},
-					{"Answer" : "From the product owner: usually less than 1 day", "Score" : 0.5},
-					{"Answer" : "From customers: usually less than 1 week", "Score" : 0.5},
-					{"Answer" : "From end users: usually less than 1 week", "Score" : 0.5}
+					{"Answer" : "From testers: usually less than 1 day", "Score" : 0.5},
+					{"Answer" : "From the product owner: usually less than 3 days", "Score" : 0.5},
+					{"Answer" : "From customers: usually less than 2 weeks", "Score" : 0.5},
+					{"Answer" : "From end users: usually less than 2 weeks", "Score" : 0.5}
 					]
 			}
 		]
