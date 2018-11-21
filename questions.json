@@ -58,7 +58,12 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?" // Add some options
+				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "Yes, but only within the team", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 1}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -70,11 +75,21 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are people on the team willing to work outside their usual specialism?" // Everyone, some, no-one (yes, yes if arms are twisted)
+				"QuestionText" : "Are people on the team willing to work outside their usual specialism?",
+				"Answers" : [
+					{"Answer" : "Everyone on the team is willing to do this", "Score" : 1},
+					{"Answer" : "Some people on the team are willing to do this", "Score" : 0.5},
+					{"Answer" : "Generally, people on the team prefer not to do this", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team have a preference towards the most immediate (information rich) comunication method available (e.g. voice call rather than email)?" // Everyone, some, no-one
+				"QuestionText" : "Do people on the team have a preference towards the most immediate (information rich) comunication method available (e.g. voice call rather than email)?",
+				"Answers" : [
+					{"Answer" : "Everyone on the team does", "Score" : 1},
+					{"Answer" : "Most people on the team do", "Score" : 0.5},
+					{"Answer" : "Most people on the team do not", "Score" : 0}
+					]					
 			},
 			{
 				"Type" : "Option",
@@ -82,7 +97,12 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "How frequently are their misunderstandings between members of the team?" // Time options
+				"QuestionText" : "How frequently are their misunderstandings between members of the team?"
+				"Answers" : [
+					{"Answer" : "Hardly ever", "Score" : 1},
+					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
+					{"Answer" : "Very frequently (at least once per day)", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
