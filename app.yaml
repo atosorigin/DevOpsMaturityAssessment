@@ -1,0 +1,25 @@
+runtime: php72
+api_version: 1
+
+handlers:
+# Serve images as static resources.
+- url: /(.+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg)$
+  application_readable: true
+
+# Serve php scripts.
+- url: /
+  script: about.php
+
+- url: /about
+  script: about.php
+
+- url: /section-.*$
+  script: collectResponses.php
+
+- url: /results.*$
+  script: viewResults.php
+
+- url: /devops-maturity-csv.php
+  script: devops-maturity-csv.php
