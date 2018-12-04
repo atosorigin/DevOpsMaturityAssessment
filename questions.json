@@ -218,7 +218,7 @@
 				"QuestionText" : "Does the architecture enable developing and testing services independently of one another (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or synced (at least monthly) using Infrastructure as Code", "Score" : 0.5},
+					{"Answer" : "Environments are regularly re-built or syncronised (at least monthly)", "Score" : 0.5},
 					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
 					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
 					{"Answer" : " Environment specific configuration items are de-coupled from the code in order to accelerate rebuilds", "Score" : 0.5}
@@ -339,7 +339,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team incentivised as a team rather than as individuals?"
+				"QuestionText" : "Are incentives for people on the team (both financial and non-financial) aligned to overall team results?"
 			},
 			{
 				"Type" : "Option",
@@ -348,7 +348,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team deliver the product through its lifecycle rather than delivering a project?"
+				"QuestionText" : "Does the team have accountability for the product throughout its lifecycle (introduction, growth, maturity, decline)?"
 			},
 			{
 				"Type" : "Option",
@@ -385,8 +385,12 @@
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Are all the product's stakeholders identified and engaged?"
+			},
+			{
+				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team aligned and incentivised to a business outcome?"
+				"QuestionText" : "Is the team aligned and incentivised to a measurable business outcome?"
 			},
 			{
 				"Type" : "Option",
