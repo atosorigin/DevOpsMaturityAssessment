@@ -1,7 +1,0 @@
----
-applications:
-- name: my-php-test
-  memory: 128M
-  instances: 1
-  buildpacks: 
-      - https://github.com/cloudfoundry/php-buildpack.git
