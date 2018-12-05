@@ -1,4 +1,4 @@
-runtime: php72
+runtime: php55
 
 handlers:
 # Serve images as static resources.
