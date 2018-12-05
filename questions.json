@@ -101,7 +101,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "How frequently are their misunderstandings between members of the team?"
+				"QuestionText" : "How frequently are their misunderstandings between members of the team?",
 				"Answers" : [
 					{"Answer" : "Hardly ever", "Score" : 1},
 					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
@@ -110,7 +110,12 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?" All thetime, sometimes, never.
+				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?",
+				"Answers" : [
+					{"Answer" : "Yes, always", "Score" : 1},
+					{"Answer" : "Yes, most of the time", "Score" : 0.5},
+					{"Answer" : "Hardly ever", "Score" : 0}
+					]
 			}
 		]
 	},
@@ -268,7 +273,6 @@
 		]
 	},
 	{
-		// Add question of do you measure: Delivery Lead Time, Deployment frequency, Time to restore service (MTTR), Change fail rate 
 		"SectionName" : "DevOps Practices",
 		"SpiderPos" : 5,
 		"Questions" : [
@@ -292,6 +296,16 @@
 					{"Answer" : "Code is integrated at least weekly", "Score" : 1},
 					{"Answer" : "Code is integrated infrequently but at least once a month", "Score" : 0.5},
 					{"Answer" : "Code is integrated on an ad hoc basis when the developer feels it is ready to share", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Checkbox",
+				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Lead time time to deliver changes (from initial request to production)", "Score" : 0.5},
+					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
+					{"Answer" : "Change failure rate", "Score" : 0.5},
+					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
 					]
 			},
 			{
@@ -344,22 +358,41 @@
 					{"Answer" : "Yes, code is often updated independently of new functions or features to ensure technical debt is minimised", "Score" : 1},
 					{"Answer" : "No, code is only updated to enable new features or functionality", "Score" : 0}
 					]
-					
-					// Is time allocated/dedicated to refactoring to improve code quality/reduce technical debt?
-					// Do developers on the team habitually refactor code?
-					// Do people on the team understand why refactoring is important and how to do it?
-					// Are there enough automated tests in place to enable refactoring with confidence?
-					// Do people on the team fear refactoring in case it breaks something (if it ain't broke, don't fix it)?
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Refactoring",
+				"QuestionText" : "Is time allocated/dedicated to refactoring to improve code quality and reduce technical debt?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Refactoring",
+				"QuestionText" : "Are there sufficient automated tests in place to enable developers to refactor with confidence?"
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "TDD",
-				"QuestionText" : "Does the team practice Test Driven Development (ensuring that automated tests are developed in advance of new features / functions)?" 
-					// TDD without automation? (mindset only)
-					// TDD applied to all development or only some
-					// Is a standard test framework being used (e.g. JUnit, etc)?
-					// Is the refactoring part of the TDD cycle always applied?
-					// Are mocks/stubs/simlulators used to ensure that tests can be run quickly and frequently?
+				"QuestionText" : "How widely does the team practice Test Driven Development (TDD - ensuring that automated tests are developed in advance of new features / functions)?", 
+				"Answers" : [
+					{"Answer" : "All product code is developed using TDD", "Score" : 2},
+					{"Answer" : "Some product code is developed using TDD", "Score" : 1},
+					{"Answer" : "TDD is not used at all", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Is a standard test framework (such as JUnit) used by the team?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Is the refactoring step of the TDD cycle usually applied?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Are mocks/stubs/simulators used to ensure that tests can be run quickly, frequently and repeatably?"
 			}
 		]
 	},
