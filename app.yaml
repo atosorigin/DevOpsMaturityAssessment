@@ -4,7 +4,7 @@ handlers:
 # Serve images as static resources.
 - url: /(.+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg))$
   static_files: \1
-  upload: .+\.(gif|png|jpg)$
+  upload: .+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg)$
 
 # Serve php scripts.
 - url: /
