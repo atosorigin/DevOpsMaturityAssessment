@@ -36,11 +36,15 @@
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Is there a clearly defined mechanism for prioritising the backlog?"
+			},
+			{
+				"Type" : "Option",
 				"QuestionText" : "Does the team work on the highest priority items in the backlog?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are the most experienced team members are allocated last so they can help develop cross functional skills and be free to resolve the most complex problems?"
+				"QuestionText" : "Are the most experienced team members are allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
 			},
 			{
 				"Type" : "Option",
@@ -121,7 +125,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure automated?"
+				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated?"
 			},
 			{
 				"Type" : "Checkbox",
@@ -219,7 +223,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Code developed to acheieve automation is developed with the same rigor as product code (e.g. testing, source control)?"
+				"QuestionText" : "Code developed to achieve automation is developed with the same rigor as product code (e.g. testing, source control)?"
 			}			
 		]
 	},
