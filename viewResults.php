@@ -4,11 +4,13 @@
 	
 	$isForm = FALSE;
 	$activePage = 'Results';
+	
 	// Determine whether we are showing detailed results for one section
 	$sectionURL = '';
-	if ( isset($_GET['Section']) )
+	$uri = $_SERVER["REQUEST_URI"];
+	if ( strpos($uri, "results-") )
 	{
-		$sectionURL = $_GET['Section'];
+		$sectionURL = explode("results-", $uri)[1];
 		$activePage = 'Detailed Reports';
 	}
 	

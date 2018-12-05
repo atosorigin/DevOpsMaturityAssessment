@@ -28,7 +28,12 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team take actions to ensure that the team does not create or experience bottlenecks with/for other teams?"
+				"QuestionText" : "Does the team take actions to ensure that the team does not create or experience bottlenecks with/for other teams?",
+				"Answers" : [
+					{"Answer" : "Yes, and the actions are effective", "Score" : 1},
+					{"Answer" : "Yes, but the actions are not always effective", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -36,15 +41,33 @@
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Is there a clearly defined mechanism for prioritising the backlog?"
+			},
+			{
+				"Type" : "Option",
 				"QuestionText" : "Does the team work on the highest priority items in the backlog?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are the most experienced team members are allocated last so they can help develop cross functional skills and be free to resolve the most complex problems?"
+				"QuestionText" : "Are the most experienced team members are allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have fast feedback loops from testers, customers, users and the product owner?"
+				"QuestionText" : "Does the team have fast feedback loops about feature development from testers, customers, users and the product owner?"
+			},
+			{
+				"Type" : "Checkbox",
+				"QuestionText" : "Does the team have fast feedback loops in place (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "From testers: usually less than 1 day", "Score" : 0.5},
+					{"Answer" : "From the product owner: usually less than 3 days", "Score" : 0.5},
+					{"Answer" : "From customers: usually less than 2 weeks", "Score" : 0.5},
+					{"Answer" : "From end users: usually less than 2 weeks", "Score" : 0.5}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Are there proactive steps taken to ensure there is no major dependency on \"super heroes\" (i.e. pair programming, mob learning, real options)?"
 			}
 		]
 	},
@@ -54,7 +77,12 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?"
+				"QuestionText" : "Are knowledge and interests shared within the team and with other teams within the organisation (for example via communities of interest)?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "Yes, but only within the team", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 1}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -66,11 +94,21 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are people on the team willing to work outside their usual specialism?"
+				"QuestionText" : "Are people on the team willing to work outside their usual specialism?",
+				"Answers" : [
+					{"Answer" : "Everyone on the team is willing to do this", "Score" : 1},
+					{"Answer" : "Some people on the team are willing to do this", "Score" : 0.5},
+					{"Answer" : "Generally, people on the team prefer not to do this", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team have a bias towards the most immediate (information rich) comunication method available (e.g. voice call instead rather than email)?"
+				"QuestionText" : "Do people on the team have a preference towards the most immediate (information rich) comunication method available (e.g. voice call rather than email)?",
+				"Answers" : [
+					{"Answer" : "Everyone on the team does", "Score" : 1},
+					{"Answer" : "Most people on the team do", "Score" : 0.5},
+					{"Answer" : "Most people on the team do not", "Score" : 0}
+					]					
 			},
 			{
 				"Type" : "Option",
@@ -78,11 +116,21 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are there rarely misunderstandings between members of the team?"
+				"QuestionText" : "How frequently are their misunderstandings between members of the team?",
+				"Answers" : [
+					{"Answer" : "Hardly ever", "Score" : 1},
+					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
+					{"Answer" : "Very frequently (at least once per day)", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?"
+				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?",
+				"Answers" : [
+					{"Answer" : "Yes, always", "Score" : 1},
+					{"Answer" : "Yes, most of the time", "Score" : 0.5},
+					{"Answer" : "Hardly ever", "Score" : 0}
+					]
 			}
 		]
 	},
@@ -97,7 +145,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure automated?"
+				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated?"
 			},
 			{
 				"Type" : "Checkbox",
@@ -195,7 +243,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Code developed to acheieve automation is developed with the same rigor as product code (e.g. testing, source control)?"
+				"QuestionText" : "Code developed to achieve automation is developed with the same rigor as product code (e.g. testing, source control)?"
 			}			
 		]
 	},
@@ -218,7 +266,7 @@
 				"QuestionText" : "Does the architecture enable developing and testing services independently of one another (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or synced (at least monthly) using Infrastructure as Code", "Score" : 0.5},
+					{"Answer" : "Environments are regularly re-built or syncronised (at least monthly)", "Score" : 0.5},
 					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
 					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
 					{"Answer" : " Environment specific configuration items are de-coupled from the code in order to accelerate rebuilds", "Score" : 0.5}
@@ -266,6 +314,16 @@
 					]
 			},
 			{
+				"Type" : "Checkbox",
+				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Lead time time to deliver changes (from initial request to production)", "Score" : 0.5},
+					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
+					{"Answer" : "Change failure rate", "Score" : 0.5},
+					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
+					]
+			},
+			{
 				"Type" : "Option",
 				"SubCategory" : "Code Review",
 				"QuestionText" : "Is there a defined code review and approval process?",
@@ -278,7 +336,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "CD",
-				"QuestionText" : "Whenever code is integrated with a shared mainline (trunk), are automated processes are triggered?",
+				"QuestionText" : "Whenever code is integrated with a shared mainline (trunk), are automated processes triggered?",
 				"Answers" : [
 					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, automated tests are then triggered and software is available to be automatically deployed into production", "Score" : 2},
 					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, manual tests are then performed before the release is manually deployed into production", "Score" : 1},
@@ -318,12 +376,38 @@
 			},
 			{
 				"Type" : "Option",
-				"SubCategory" : "TDD",
-				"QuestionText" : "Does the team practice Test Driven Development (ensuring that automated tests are developed in advance of new features / functions)?"
+				"SubCategory" : "Refactoring",
+				"QuestionText" : "Is time allocated/dedicated to refactoring to improve code quality and reduce technical debt?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are there proactive steps taken to ensure there is no major dependency on \"super heroes\" (i.e. pair programming, mob learning, real options)?"
+				"SubCategory" : "Refactoring",
+				"QuestionText" : "Are there sufficient automated tests in place to enable developers to refactor with confidence?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "How widely does the team practice Test Driven Development (TDD - ensuring that automated tests are developed in advance of new features / functions)?", 
+				"Answers" : [
+					{"Answer" : "All product code is developed using TDD", "Score" : 2},
+					{"Answer" : "Some product code is developed using TDD", "Score" : 1},
+					{"Answer" : "TDD is not used at all", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Is a standard test framework (such as JUnit) used by the team?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Is the refactoring step of the TDD cycle usually applied?"
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "TDD",
+				"QuestionText" : "Are mocks/stubs/simulators used to ensure that tests can be run quickly, frequently and repeatably?"
 			}
 		]
 	},
@@ -339,7 +423,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team incentivised as a team rather than as individuals?"
+				"QuestionText" : "Are incentives for people on the team (both financial and non-financial) aligned to overall team results?"
 			},
 			{
 				"Type" : "Option",
@@ -348,7 +432,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team deliver the product through its lifecycle rather than delivering a project?"
+				"QuestionText" : "Does the team have accountability for the product throughout its lifecycle (introduction, growth, maturity, decline)?"
 			},
 			{
 				"Type" : "Option",
@@ -385,8 +469,12 @@
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Are all the product's stakeholders identified and engaged?"
+			},
+			{
+				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team aligned and incentivised to a business outcome?"
+				"QuestionText" : "Is the team aligned and incentivised to a measurable business outcome?"
 			},
 			{
 				"Type" : "Option",
