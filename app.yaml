@@ -6,7 +6,6 @@ handlers:
 - url: /(.+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg))$
   static_files: \1
   upload: .+\.(gif|png|jpg)$
-  application_readable: true
 
 # Serve php scripts.
 - url: /
