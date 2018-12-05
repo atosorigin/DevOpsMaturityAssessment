@@ -58,7 +58,7 @@
 	},
 	{
 		"SectionName" : "Collaboration",
-		"SpiderPos" : 6,
+		"SpiderPos" : 7,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -234,7 +234,7 @@
 	},
 	{
 		"SectionName" : "Architecture and Design",
-		"SpiderPos" : 4,
+		"SpiderPos" : 5,
 		"Questions" : [
 			{
 				"Type" : "Option",
@@ -251,7 +251,7 @@
 				"QuestionText" : "Does the architecture enable developing and testing services independently of one another (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or synced (at least monthly) using Infrastructure as Code", "Score" : 0.5},
+					{"Answer" : "Environments are regularly re-built or syncronised (at least monthly)", "Score" : 0.5},
 					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
 					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
 					{"Answer" : " Environment specific configuration items are de-coupled from the code in order to accelerate rebuilds", "Score" : 0.5}
@@ -274,7 +274,7 @@
 	},
 	{
 		"SectionName" : "DevOps Practices",
-		"SpiderPos" : 5,
+		"SpiderPos" : 6,
 		"Questions" : [
 			{
 				"Type" : "Checkbox",
@@ -408,7 +408,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team incentivised as a team rather than as individuals?"
+				"QuestionText" : "Are incentives for people on the team (both financial and non-financial) aligned to overall team results?"
 			},
 			{
 				"Type" : "Option",
@@ -417,7 +417,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team deliver the product through its lifecycle rather than delivering a project?"
+				"QuestionText" : "Does the team have accountability for the product throughout its lifecycle (introduction, growth, maturity, decline)?"
 			},
 			{
 				"Type" : "Option",
@@ -454,8 +454,12 @@
 			},
 			{
 				"Type" : "Option",
+				"QuestionText" : "Are all the product's stakeholders identified and engaged?"
+			},
+			{
+				"Type" : "Option",
 				"SubCategory" : "Incentivisation",
-				"QuestionText" : "Is the team aligned and incentivised to a business outcome?"
+				"QuestionText" : "Is the team aligned and incentivised to a measurable business outcome?"
 			},
 			{
 				"Type" : "Option",
@@ -491,6 +495,39 @@
 				"Type" : "Option",
 				"SubCategory" : "Culture",
 				"QuestionText" : "Does the team have a feedback culture (where people are happy to quickly share negative and positive feedback)?"
+			}
+		]
+	},
+	{
+		"SectionName" : "Standardisation",
+		"SpiderPos" : 5,
+		"Questions" : [
+			{
+				"Type" : "Checkbox",
+				"QuestionText" : "Does the team have a defined set of tooling standards (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
+					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
+					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
+					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable v mutable)", "Score" : 1}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
+				"Answers" : [
+					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
+					{"Answer" : "Yes, but with an insufficeint portfolio of options to meet our development needs", "Score" : 1},
+					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Do you make best use of SaaS (Software as a Service) for utility applcations (i.e. ones not used for competitive advantage such as version control)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service) and IaaS (Infrastructure as a Service)?"
 			}
 		]
 	}

@@ -13,7 +13,8 @@
 <?php
 
 	// Determine which section of the assessment we are showing
-	$currentSection = $_GET['Section'];
+	$uri = $_SERVER["REQUEST_URI"];
+	$currentSection = explode("section-", $uri)[1];
 	
 	// Find the current section in our model
 	$sectionIndex = 0;
