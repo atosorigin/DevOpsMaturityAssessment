@@ -34,7 +34,7 @@
 			{
 				"Type" : "Book",
 				"Text" : "Kanban: Successful Evolutionary Change for Your Technology Business by David Anderson",
-				"Href" : "https://www.amazon.co.uk/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402",
+				"Href" : "https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402",
 				"Paid" : "Yes"
 			}
 		]
@@ -124,12 +124,23 @@
 		]
 	},
 	"TDD" : {
-		"Advice" : "Some advice on TDD",
+		"Advice" : "Test Driven Development (TDD) is an approach to developing software where automated tests are written before production code. This ensures that an up-to-date automated tests are always maintained and makes it easier and less risky to make changes to software.",
 		"Links" : [
 			{
-				"Type" : "Website",
-				"Text" : "Clean Coders",
-				"Href" : "https://cleancoders.com/",
+				"Type" : "Blog",
+				"Text" : "TestDrivenDevelopment by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/TestDrivenDevelopment.html"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
+				"Href" : "https://www.amazon.com/gp/product/0131016490/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Refactoring: Improving the Design of Existing Code by Martin Fowler",
+				"Href" : "https://www.amazon.com/gp/product/0201485672/",
 				"Paid" : "Yes"
 			}
 		]
@@ -176,19 +187,19 @@
 			{
 				"Type" : "Book",
 				"Text" : "Tribal Leadership Revised Edition: Leveraging Natural Groups to Build a Thriving Organization",
-				"Href" : "https://www.amazon.co.uk/Tribal-Leadership-Leveraging-Thriving-Organization/dp/0061251321/",
+				"Href" : "https://www.amazon.com/Tribal-Leadership-Leveraging-Thriving-Organization/dp/0061251321/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
 				"Text" : "Tribal Unity: Getting from Teams to Tribes by Creating a One Team Culture by Em Campbell-Pretty",
-				"Href" : "https://www.amazon.co.uk/Tribal-Unity-Getting-Creating-Culture/dp/1537347578/",
+				"Href" : "https://www.amazon.com/Tribal-Unity-Getting-Creating-Culture/dp/1537347578/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
 				"Text" : "The Open Organization by Jim Whitehurst",
-				"Href" : "https://www.amazon.co.uk/Open-Organization-Igniting-Passion-Performance/dp/1625275277/",
+				"Href" : "https://www.amazon.com/Open-Organization-Igniting-Passion-Performance/dp/1625275277/",
 				"Paid" : "Yes"
 			},
 			{
