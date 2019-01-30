@@ -112,7 +112,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is there an opportunity for people on the team to meet face to face (even if only 1-2 times per year)?"
+				"QuestionText" : "Is there sufficient opportunity for people on the team to meet face to face?"
 			},
 			{
 				"Type" : "Option",
@@ -145,7 +145,12 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated?"
+				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated?",
+				"Answers" : [
+					{"Answer" : "Yes", "Score" : 1},
+					{"Answer" : "Partially", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
+					]
 			},
 			{
 				"Type" : "Checkbox",
@@ -180,7 +185,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated unit tests in place?",
+				"QuestionText" : "Does the team have a high degree of automated unit tests in place (testing individual modules)?",
 				"Answers" : [
 					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
 					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
@@ -190,7 +195,17 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Testing",
-				"QuestionText" : "Does the team have a high degree of automated integration tests in place?",
+				"QuestionText" : "Does the team have a high degree of automated integration tests in place (testing the interaction of modules with each other)?",
+				"Answers" : [
+					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
+					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
+					{"Answer" : "No", "Score" : 0}
+					]
+			},
+			{
+				"Type" : "Option",
+				"SubCategory" : "Testing",
+				"QuestionText" : "Does the team have a high degree of automated system tests in place (confirming overall system functionality meets requirements)?",
 				"Answers" : [
 					{"Answer" : "Yes, automated tests are in place and run on every build", "Score" : 1},
 					{"Answer" : "Yes, automated tests are in place", "Score" : 0.5},
@@ -479,6 +494,10 @@
 			{
 				"Type" : "Option",
 				"QuestionText" : "Do management and the wider organisation see the value in protecting time for continuous improvement?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "Does the team have enough time to learn new technologies, tools and practices?"
 			},
 			{
 				"Type" : "Option",
