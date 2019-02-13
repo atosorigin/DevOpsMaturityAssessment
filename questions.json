@@ -6,7 +6,7 @@
 		"Questions" : [
 			{
 				"Type" : "Banner",
-				"QuestionText" : "The goal of this questionaire is to help you assess the DevOps maturity of your team and to help you understand what might be the appropriate next steps for you on your DevOps journey."
+				"QuestionText" : "The goal of this questionaire is to help you assess the DevOps maturity of your team and to help you understand what might be the appropriate next steps for you on your DevOps journey.<br><br>These questions are intended to be completed for one team (typically reporting to the same line manager and usually consisting of between 5 and 15 people)."
 			}
 		]
 	},
@@ -145,7 +145,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated?",
+				"QuestionText" : "Is the provisioning, configuration and management of infrastructure (e.g. networks, storage, etc.) automated (for example by using Infrastructure as Code)?",
 				"Answers" : [
 					{"Answer" : "Yes", "Score" : 1},
 					{"Answer" : "Partially", "Score" : 0.5},
@@ -538,7 +538,7 @@
 		"Questions" : [
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Does the team have a defined set of tooling standards (tick all that apply)?",
+				"QuestionText" : "Has the organisation standardised on a set of tooling standards (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
 					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
@@ -551,17 +551,21 @@
 				"QuestionText" : "Has the organisation standardised on a set of application stacks/development languages?",
 				"Answers" : [
 					{"Answer" : "Yes, with a sufficient portfolio of options to meet our development needs", "Score" : 2},
-					{"Answer" : "Yes, but with an insufficeint portfolio of options to meet our development needs", "Score" : 1},
+					{"Answer" : "Yes, but with an insufficient portfolio of options to meet our development needs", "Score" : 1},
 					{"Answer" : "No, any team can choose any stack/language without constraint", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make best use of SaaS (Software as a Service) for utility applcations (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "Do you make best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service) and IaaS (Infrastructure as a Service)?"
+				"QuestionText" : "As much as makes sense, do you use PaaS (Platform as a Service)?"
+			},
+			{
+				"Type" : "Option",
+				"QuestionText" : "As much as makes sense, do you use IaaS (Infrastructure as a Service)?"
 			}
 		]
 	}
