@@ -58,7 +58,7 @@
 						<i class="far fa-chart-bar fa-stack-1x"></i>
 					</span>
 					<h2>Understand Where You Are</h2>
-					<p class="text-justify">Our set of carefully designed questions accross 6 different areas will help you quickly establish your current level of DevOps maturity.</p>
+					<p class="text-justify">Our set of carefully designed questions across 7 different areas will help you quickly establish your current level of DevOps maturity.</p>
 					<p class="text-justify">You can view the results online as well as downloading them in CSV format for more detailed analysis.</p>
 				</div><!-- /.col-lg-4 -->
 			
