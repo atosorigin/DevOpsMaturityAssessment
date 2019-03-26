@@ -71,22 +71,116 @@
 		]
 	},
 	"Architecture and Design": {
-		"Advice" : "Some advice on architecture and design for DevOps",
+		"Advice" : "Navigating the many and various options for optimising architecture for DevOps can be bewildering! It is important to bear in mind that there are no \"right\" answers. The agility and functionality of Public Cloud environments make them ideal for building DevOps focused architectures and a good starting point for reading matter is the Cloud Providers’ own guides. Beyond that there are various books, videos and vendor tool documentation that are useful sources of information.",
 		"Links" : [
+			{
+				"Type" : "Book",
+				"Text" : "Google Site Reliability Engineering Books",
+				"Href" : "https://landing.google.com/sre/books/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "DevOps and AWS",
+				"Href" : "https://aws.amazon.com/devops/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Microsoft Azure DevOps Checklist",
+				"Href" : "https://docs.microsoft.com/en-us/azure/architecture/checklist/dev-ops"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Microsoft Azure for Architects",
+				"Href" : "https://azure.microsoft.com/en-us/resources/azure-for-architects/"
+			},
 			{
 				"Type" : "Website",
 				"Text" : "The Twelve-Factor App",
 				"Href" : "https://12factor.net/"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations",
+				"Href" : "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services",
+				"Href" : "https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Practical DevOps: Implement DevOps in your organization by effectively building, deploying, testing, and monitoring code",
+				"Href" : "https://www.amazon.com/Practical-DevOps-organization-effectively-monitoring/dp/1788392574/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Rethinking enterprise architecture for DevOps, agile, & cloud native organizations - Michael Cote (0:48)",
+				"Href" : "https://www.youtube.com/watch?v=2UquXJsbr9M"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Mastering Chaos - A Netflix Guide to Microservices - Josh Evans (0:53)",
+				"Href" : "https://www.youtube.com/watch?v=CZ3wIuvmHeM"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Ansible: Up and Running: Automating Configuration Management and Deployment the Easy Way",
+				"Href" : "https://www.amazon.com/_/dp/1491979801",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Puppet: Infrastructure as code",
+				"Href" : "https://puppet.com/solutions/infrastructure-as-code"
 			}
 		]
 	},
 	"DevOps Practices" : {
-		"Advice" : "Some advice on DevOps practices",
+		"Advice" : "There are a number of technical practices that are core to DevOps: Continuous Integration, Continuous Deployment/Delivery, Test Driven Development, Refactoring, and Code Review. The resources here are good overviews. For more in depth results see the detailed report for DevOps Practices.",
 		"Links" : [
 			{
+				"Type" : "Article",
+				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
+				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "Continuous Integration by Martin Fowler",
+				"Href" : "https://martinfowler.com/articles/continuousIntegration.html"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Continuous Delivery",
+				"Href" : "https://continuousdelivery.com/"
+			},
+			{
+				"Type" : "Video",
+					"Text" : "Continuous Delivery - Jez Humble (0:46)",
+					"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "TestDrivenDevelopment by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/TestDrivenDevelopment.html"
+			},
+			{
 				"Type" : "Book",
-				"Text" : "Lean from the Trenches by Henrik Kniberg",
-				"Href" : "https://www.crisp.se/file-uploads/Lean-from-the-trenches.pdf"
+				"Text" : "The Art of Agile Development: Test-Driven Development by James Shore",
+				"Href" : "https://www.jamesshore.com/Agile-Book/test_driven_development.html"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Refactoring.com",
+				"Href" : "https://refactoring.com/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "Code Reviews: Just Do It by Jeff Atwood",
+				"Href" : "https://blog.codinghorror.com/code-reviews-just-do-it/"
 			}
 		]
 	},
