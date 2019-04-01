@@ -234,7 +234,7 @@
 			{
 				"Type" : "Book",
 				"Text" : "Refactoring: Improving the Design of Existing Code by Martin Fowler",
-				"Href" : "https://www.amazon.com/gp/product/0201485672/",
+				"Href" : "https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/",
 				"Paid" : "Yes"
 			}
 		]
@@ -246,9 +246,39 @@
 		]
 	},
 	"Refactoring" : {
-		"Advice" : "Some advice on refactoring",
+		"Advice" : "Refactoring is the technical practice of improving the internal quality of code without changing its external functionality. It is a way of reducing technical debt and enabling new functionality to be added more easily. It is also an integral part of Test Driven Development (TDD).",
 		"Links" : [
-			
+			{
+				"Type" : "Website",
+				"Text" : "Refactoring.com",
+				"Href" : "https://refactoring.com/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "What is refactoring?",
+				"Href" : "https://www.agilealliance.org/glossary/refactoring"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Online catalog of refactorings by Martin Fowler",
+				"Href" : "https://refactoring.com/catalog/"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Code Refactoring: Learn Code Smells And Level Up Your Game! - Sandi Metz (0:36)",
+				"Href" : "https://www.youtube.com/watch?v=D4auWwMsEnY"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Workflows of Refactoring - Martin Fowler (0:27)",
+				"Href" : "https://www.youtube.com/watch?v=vqEg37e4Mkw"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Refactoring: Improving the Design of Existing Code by Martin Fowler",
+				"Href" : "https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"Environments" : {
@@ -258,9 +288,40 @@
 		]
 	},
 	"Testing" : {
-		"Advice" : "Some advice on Test Automation",
+		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enabled new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "TestPyramid by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/TestPyramid.html"
+			},
+			{
+				"Type" : "Article",
+				"Text" : "The Practical Test Pyramid by Martin Fowler",
+				"Href" : "https://martinfowler.com/articles/practical-test-pyramid.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Automation Testing Tutorial for Beginners (0:07)",
+				"Href" : "https://www.youtube.com/watch?v=RbSlW8jZFe8"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Netflix Automation Talks - Test Automation at Scale (1:16)",
+				"Href" : "https://www.youtube.com/watch?v=FrBN94gUn_I"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
+				"Href" : "https://www.amazon.com/Test-Driven-Development-Practical-Guide/dp/0131016490",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Working Effectively with Legacy Code by Michael Feathers",
+				"Href" : "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"Static Analysis" : {
