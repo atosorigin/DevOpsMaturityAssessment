@@ -185,19 +185,9 @@
 		]
 	},
 	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Some advice on org structure",
+		"Advice" : "Org Structure, Culture and Incentives",
 		"Links" : [
-			{
-				"Type" : "Article",
-				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
-				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "The Phoenix Project by Gene Kim, Kevin Behr and George Spafford",
-				"Href" : "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592",
-				"Paid" : "Yes"
-			}
+			
 		]
 	},
 	"CI" : {
@@ -240,9 +230,31 @@
 		]
 	},
 	"Code Review" : {
-		"Advice" : "Some advice on Code Review",
+		"Advice" : "Code reviews are a very effective way of increasing software quality and also spreading knowledge accross the team.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "Code Reviews: Just Do It by Jeff Atwood",
+				"Href" : "https://blog.codinghorror.com/code-reviews-just-do-it/"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Code Complete: A Practical Handbook of Software Construction by Steve McConnell",
+				"Href" : "https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin",
+				"Href" : "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt",
+				"Href" : "https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"Refactoring" : {
@@ -331,9 +343,34 @@
 		]
 	},
 	"Organisation Structure" : {
-		"Advice" : "Some advice on org structure",
+		"Advice" : "For successful DevOps, the organisation needs to be structured into teams that are both cross-functional and autonomous.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "The Benefits of Feature Teams by Mike Cohn",
+				"Href" : "https://www.mountaingoatsoftware.com/blog/the-benefits-of-feature-teams"
+			},
+			{
+				"Type" : "Article",
+				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
+				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Spotify Engineering Culture",
+				"Href" : "https://vimeo.com/85490944"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Migrating to Cloud-Native Application Architectures by Matt Stine",
+				"Href" : "https://download3.vmware.com/vmworld/2015/downloads/oreilly-cloud-native-archx.pdf"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Phoenix Project by Gene Kim, Kevin Behr and George Spafford",
+				"Href" : "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"Culture" : {
