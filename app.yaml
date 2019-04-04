@@ -9,15 +9,25 @@ handlers:
 # Serve php scripts.
 - url: /
   script: about.php
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /about
   script: about.php
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /section-.*$
   script: collectResponses.php
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /results.*$
   script: viewResults.php
+  secure: always
+  redirect_http_response_code: 301
 
 - url: /devops-maturity-csv.php
   script: devops-maturity-csv.php
+  secure: always
+  redirect_http_response_code: 301

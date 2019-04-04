@@ -314,7 +314,7 @@
 					{"Answer" : "We have a common code repository (e.g. Git based repo)", "Score" : 0.5},
 					{"Answer" : "We have a defined branching structure", "Score" : 0.5},
 					{"Answer" : "We have defined repository structure", "Score" : 0.5},
-					{"Answer" : "Our structure and branching strategy are aligned to Our Dev, Test, and Prod environments (enabling a smooth flow between environments)", "Score" : 0.5}
+					{"Answer" : "Our structure and branching strategy are aligned to our Dev, Test, and Prod environments (enabling a smooth flow between environments)", "Score" : 0.5}
 					]
 			},
 			{
