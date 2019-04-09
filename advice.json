@@ -337,9 +337,28 @@
 		]
 	},
 	"Static Analysis" : {
-		"Advice" : "Some advice on static analysis",
+		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on some version of the source code, and in the other cases, some form of the object code. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
 		"Links" : [
-			
+			{
+				"Type" : "Video",
+				"Text" : "Static Code Analysis: Scan All Your Code For Bugs - Dr. Jared DeMott (0:19)",
+				"Href" : "https://www.youtube.com/watch?v=Heor8BVa4A0"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "SonarQube",
+				"Href" : "https://www.sonarqube.org/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Coverity Scan",
+				"Href" : "https://scan.coverity.com/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Klocwork",
+				"Href" : "https://www.roguewave.com/products-services/klocwork"
+			}
 		]
 	},
 	"Organisation Structure" : {
