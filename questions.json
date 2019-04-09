@@ -275,7 +275,7 @@
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "??????? Does question match answers???? Does the architecture enable developing and testing of services independently of one another (tick all that apply)?",
+				"QuestionText" : "Does the architecture enable development, testing and other QA activities to be representative and performed independently of each another without impacting production (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
 					{"Answer" : "Environments are regularly re-built or synchronised (at least monthly)", "Score" : 0.5},
