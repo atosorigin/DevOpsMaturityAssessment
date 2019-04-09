@@ -41,9 +41,9 @@
 			<section class="jumbotron text-center text-dark bg-light border-primary border">
 				<div class="container">
 					<h1 class="jumbotron-heading">Improve Your DevOps Capability</h1>
-					<p class="lead">This online DevOps Maturity Assessment questionaire will help you understand your current strengths and weeknesses and then recommend resources that can support you in taking the next steps on your DevOps journey.</p>
+					<p class="lead">This online DevOps Maturity Assessment questionnaire will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your DevOps journey.</p>
 					<p>
-						<a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btn btn-primary">Start the Questionaire</a>
+						<a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btn btn-primary">Start the Questionnaire</a>
 						<a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank" class="btn btn-secondary">Fork us on GitHub</a>
 					</p>
 				</div>
@@ -78,7 +78,7 @@
 						<i class="fas fa-lock-open fa-stack-1x"></i>
 					</span>
 					<h2>Free and Open Source</h2>
-					<p class="text-justify">This tool is made avaialble under the MIT License: you are free to use, adapt and redistribute it, both for commercial and non-commercial use. There is no obligation to share your changes, although we always appreciate feedback! Why not <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank">fork us on GitHub</a>?</p>
+					<p class="text-justify">This tool is made available under the MIT License: you are free to use, adapt and redistribute it, both for commercial and non-commercial use. There is no obligation to share your changes, although we always appreciate feedback! Why not <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank">fork us on GitHub</a>?</p>
 		
 				</div><!-- /.col-lg-4 -->
 				
@@ -93,7 +93,7 @@
 			<section class="jumbotron text-dark text-center border border-primary bg-light mt-2">
 				<div class="container">
 					<h1 class="jumbotron-heading">Meet The Team</h1>
-					<p class="lead">This tool was created by members of the Atos Expert Community with contributions from many other practitioners accross Atos and Worldline globally. You can find out more about the core team below.	</p>
+					<p class="lead">This tool was created by members of the Atos Expert Community with contributions from many other practitioners across Atos and Worldline globally. You can find out more about the core team below.	</p>
 				</div>
 			</section>
 		  

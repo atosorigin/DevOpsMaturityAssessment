@@ -29,7 +29,36 @@
 			$navBar['Detailed Reports']['Items'][$section['SectionName']]['Type'] = 'Standard';
 		}
 	}
-	 
+	
+	function GetBaseURL()
+	{
+		// Routine based on https://wp-mix.com/php-absolute-path-document-root-base-url/
+		
+		$doc_root = str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['SCRIPT_FILENAME']);
+		//$doc_root = str_replace($doc_root, "\\", "\\");
+		
+		// base directory
+		$base_dir = __DIR__;
+		$base_dir = str_replace("\\", "/", $base_dir);
+		
+		// server protocol
+		$protocol = empty($_SERVER['HTTPS']) ? 'http' : 'https';
+
+		// domain name
+		$domain = $_SERVER['SERVER_NAME'];
+
+		// base url
+		$base_url = str_replace($doc_root, '', $base_dir);
+		
+		// server port
+		$port = $_SERVER['SERVER_PORT'];
+		$disp_port = ($protocol == 'http' && $port == 80 || $protocol == 'https' && $port == 443) ? '' : ":$port";
+
+		// put em all together to get the complete base URL
+		return $protocol . "://" . $domain . $disp_port . $base_url;
+
+	}
+	
 	function SectionNameToURLName($sectionName) {
 		return strtolower(str_replace(',', '', str_replace(' ', '-', $sectionName)));
 	}
@@ -119,6 +148,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<!-- Open Graph info -->
+		<meta property="og:title" content="DevOps Maturity Assessment" />
+		<meta property="og:description" content="This online DevOps Maturity Assessment questionnaire will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your DevOps journey." />
+		<meta property="og:site_name" content="DevOps Maturity Assessment" />
+		<meta property="og:image" content="<?=GetBaseURL()?>/og-image.jpg" />
+		<meta property="og:image:width" content="1680" />
+		<meta property="og:image:height" content="870" />
+		
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="fontawesome/css/all.css" rel="stylesheet">

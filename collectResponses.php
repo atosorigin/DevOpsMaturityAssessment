@@ -50,7 +50,6 @@
 	{	
 		renderQuestion($question, $index);	
 	}
-	
 	?>
 
 		</div>

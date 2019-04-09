@@ -32,3 +32,4 @@ This source code is released under the [MIT license](https://github.com/atosorig
 * [Font Awesome Free](https://fontawesome.com/free)
 * [Comfortaa Font](https://github.com/alexeiva/comfortaa)
 * [Markus Spiske](https://unsplash.com/@markusspiske) for background image, published on [Unsplash](https://unsplash.com/)
+* [Vojtech Bruzek](https://unsplash.com/@vojtechbruzek) for og-image.jpg, published on [Unsplash](https://unsplash.com/)
