@@ -16,11 +16,17 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have a new, pottentially shippable, version of the product available every 1-2 weeks?"
+				"QuestionText" : "Does the team have a new, potentially shippable, version of the product available every 1-2 weeks?"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team track metrics that measure the elapsed time taken to deliver valuable changes?"
+				"Type" : "Checkbox",
+				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
+				"Answers" : [
+					{"Answer" : "Elapsed lead time time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
+					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
+					{"Answer" : "Change failure rate", "Score" : 0.5},
+					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
+					]
 			},
 			{
 				"Type" : "Option",
@@ -52,10 +58,6 @@
 				"QuestionText" : "Are the most experienced team members are allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
 			},
 			{
-				"Type" : "Option",
-				"QuestionText" : "Does the team have fast feedback loops about feature development from testers, customers, users and the product owner?"
-			},
-			{
 				"Type" : "Checkbox",
 				"QuestionText" : "Does the team have fast feedback loops in place (tick all that apply)?",
 				"Answers" : [
@@ -67,7 +69,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are there proactive steps taken to ensure there is no major dependency on \"super heroes\" (i.e. pair programming, mob learning, real options)?"
+				"QuestionText" : "Are there proactive steps taken to ensure there is no major dependency on \"super heroes\" (e.g. pair programming, mob learning, real options)?"
 			}
 		]
 	},
@@ -86,7 +88,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have methods in place for asyncronous communication (for example Kanban Board, JIRA, Slack, Circuit)?"
+				"QuestionText" : "Does the team have methods in place for asynchronous communication (for example Kanban Board, JIRA, Slack, Circuit)?"
 			},
 			{
 				"Type" : "Option",
@@ -98,7 +100,7 @@
 				"Answers" : [
 					{"Answer" : "Everyone on the team is willing to do this", "Score" : 1},
 					{"Answer" : "Some people on the team are willing to do this", "Score" : 0.5},
-					{"Answer" : "Generally, people on the team prefer not to do this", "Score" : 0}
+					{"Answer" : "Generally people on the team prefer not to do this", "Score" : 0}
 					]
 			},
 			{
@@ -141,7 +143,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Environments",
-				"QuestionText" : "Are development and test consistent with production environments?"
+				"QuestionText" : "Are development and test environments consistent with production environments?"
 			},
 			{
 				"Type" : "Option",
@@ -161,11 +163,6 @@
 					{"Answer" : "The application stack", "Score" : 1},
 					{"Answer" : "The application", "Score" : 1}
 					]
-			},
-			{
-				"Type" : "Option",
-				"SubCategory" : "Environments",
-				"QuestionText" : "Is the automation of environments tested and version controlled to the same (or better) standard as product code?"
 			},
 			{
 				"Type" : "Option",
@@ -258,7 +255,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Code developed to achieve automation is developed with the same rigor as product code (e.g. testing, source control)?"
+				"QuestionText" : "Is code developed to achieve automation developed with the same rigor as product code (e.g. testing, source control)?"
 			}			
 		]
 	},
@@ -271,20 +268,20 @@
 				"QuestionText" : "Does the architecture of the application consists of loosely coupled components (choose the most accurate description)?",
 				"Answers" : [
 					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
-					{"Answer" : "The application is made up of several separate components but rely on external solutions to provide availability and scalability", "Score" : 2},
+					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
 					{"Answer" : "The application is largely monolithic but made up of code modules that can be worked on independently and then re-compiled into a single unit", "Score" : 1},
-					{"Answer" : "The application is build up of monolithic code and can only be changed in its entirely as part of a release schedule", "Score" : 0}
+					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirely as part of a release schedule", "Score" : 0}
 					]
 			},
 			{
 				"Type" : "Checkbox",
-				"QuestionText" : "Does the architecture enable developing and testing services independently of one another (tick all that apply)?",
+				"QuestionText" : "Does the architecture enable development, testing and other QA activities to be representative and performed independently of each another without impacting production (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "There are fully separate development, test and QA environments", "Score" : 0.5},
-					{"Answer" : "Environments are regularly re-built or syncronised (at least monthly)", "Score" : 0.5},
+					{"Answer" : "Environments are regularly re-built or synchronised (at least monthly)", "Score" : 0.5},
 					{"Answer" : "The 3 environments are similar at all levels (resilience, performance, security, dependencies)", "Score" : 0.5},
 					{"Answer" : "Each environment can be torn down and rebuilt without affecting other environments", "Score" : 0.5},
-					{"Answer" : " Environment specific configuration items are de-coupled from the code in order to accelerate rebuilds", "Score" : 0.5}
+					{"Answer" : " Environment specific configuration items are decoupled from the code in order to accelerate rebuilds", "Score" : 0.5}
 					]
 			},
 			{
@@ -329,21 +326,11 @@
 					]
 			},
 			{
-				"Type" : "Checkbox",
-				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
-				"Answers" : [
-					{"Answer" : "Lead time time to deliver changes (from initial request to production)", "Score" : 0.5},
-					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
-					{"Answer" : "Change failure rate", "Score" : 0.5},
-					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
-					]
-			},
-			{
 				"Type" : "Option",
 				"SubCategory" : "Code Review",
 				"QuestionText" : "Is there a defined code review and approval process?",
 				"Answers" : [
-					{"Answer" : "We have a targetted code review process that is appropriate and ensures code is published in a timely manner", "Score" : 1},
+					{"Answer" : "We have a targeted code review process that is appropriate and ensures code is published in a timely manner", "Score" : 1},
 					{"Answer" : "We have a code review process but the process incurs delays and hinders deployments", "Score" : 0.5},
 					{"Answer" : "We have no code review process and bugs can frequently be integrated into the mainline (trunk)", "Score" : 0}
 					]
@@ -355,7 +342,7 @@
 				"Answers" : [
 					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, automated tests are then triggered and software is available to be automatically deployed into production", "Score" : 2},
 					{"Answer" : "Yes, an automated build of the software is triggered into a production-like environment, manual tests are then performed before the release is manually deployed into production", "Score" : 1},
-					{"Answer" : "Yes, an automated build of the software is triggered, however this build is then manually deployed into the relevant environmenst (QA and Prod)", "Score" : 0.5},
+					{"Answer" : "Yes, an automated build of the software is triggered, however this build is then manually deployed into the relevant environments (QA and Prod)", "Score" : 0.5},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -402,7 +389,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "TDD",
-				"QuestionText" : "How widely does the team practice Test Driven Development (TDD - ensuring that automated tests are developed in advance of new features / functions)?", 
+				"QuestionText" : "How widely does the team practice Test Driven Development (TDD), ensuring that automated tests are developed in advance of new features?", 
 				"Answers" : [
 					{"Answer" : "All product code is developed using TDD", "Score" : 2},
 					{"Answer" : "Some product code is developed using TDD", "Score" : 1},
@@ -447,7 +434,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have accountability for the product throughout its lifecycle (introduction, growth, maturity, decline)?"
+				"QuestionText" : "Does the team have accountability for the product throughout its life-cycle (introduction, growth, maturity, decline)?"
 			},
 			{
 				"Type" : "Option",
@@ -466,7 +453,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the team have say in which product they work on (e.g. self selection days)?"
+				"QuestionText" : "Does the team have a say in what they work on (e.g. self selection days)?"
 			},
 			{
 				"Type" : "Option",
@@ -516,7 +503,7 @@
 				"QuestionText" : "Do senior stakeholders buy into and support the DevOps approach?",
 				"Answers" : [
 					{"Answer" : "Yes, we rarely have issues with business cases or bureaucratic processes", "Score" : 2},
-					{"Answer" : "Yes, there is buy-in and understanding, but business processes are too rigid", "Score" : 1},
+					{"Answer" : "Yes, there is buy-in and understanding, but business processes are still too rigid", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},
@@ -543,7 +530,7 @@
 					{"Answer" : "We have a defined set of CI/CD tooling that is universally used", "Score" : 1},
 					{"Answer" : "We have defined code repository tooling and standardised usage processes for them (e.g. branching pattern)", "Score" : 1},
 					{"Answer" : "We have defined monitoring tooling", "Score" : 1},
-					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable v mutable)", "Score" : 1}
+					{"Answer" : "We have defined patching/upgrade tooling and processes (e.g. immutable vs. mutable)", "Score" : 1}
 					]
 			},
 			{
@@ -557,7 +544,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do you make best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
+				"QuestionText" : "Do you make the best use of SaaS (Software as a Service) for utility applications (i.e. ones not used for competitive advantage such as version control)?"
 			},
 			{
 				"Type" : "Option",
