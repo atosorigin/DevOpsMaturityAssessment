@@ -408,9 +408,33 @@
 		]
 	},
 	"Standardisation" : {
-		"Advice" : "Some advice on standardisation",
+		"Advice" : "The arguments for standardisation versus flexibility are complex and multi-dimensional, as are the related decision points of utilising SaaS vs PaaS vs IaaS. In truth, there is no \"correct\" answer and the overall benefit of standardisation will vary. The key to success is to gain a good understanding of the relative merits and disadvantages, which can then be applied to any particular situation. Below are some excellent guides to help develop greater understanding of this.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "Challenges in DevOps Standardization by Lavanya Subbarayalu",
+				"Href" : "https://devops.com/challenges-devops-standardization/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "DevOps Survey Results: The Case for Standardized Continuous Delivery Tools by Heidi Gilmore",
+				"Href" : "https://www.cloudbees.com/blog/devops-survey-results-case-standardized-continuous-delivery-tools"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "Centralized vs. decentralized CI / CD strategies for multiple teams by Adrian Oprea",
+				"Href" : "https://oprea.rocks/blog/centralized-vs-decentralized-ci-cd-strategies-for-multiple-teams/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "When to use SaaS, PaaS, and IaaS by Eamonn Colman",
+				"Href" : "https://www.computenext.com/blog/when-to-use-saas-paas-and-iaas/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "SaaS vs PaaS vs IaaS: What’s The Difference and How To Choose by Stephen Watts",
+				"Href" : "https://www.bmc.com/blogs/saas-vs-paas-vs-iaas-whats-the-difference-and-how-to-choose/"
+			}
 		]
 	}
 }
