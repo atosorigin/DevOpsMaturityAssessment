@@ -65,9 +65,41 @@
 		]
 	},
 	"Automation" : {
-		"Advice" : "Some advice on how to do automation",
+		"Advice" : "Automation is critical to shortening the time from customer asks to customer gets and thus core to DevOps. If quality and speed are to be transformed, automation is essential. It enables environments to be provisioned and configured identically every time, application code to be built, tested, delivered, provisioned and configured, environments to be monitored and incidents including security threats to be responded to based upon a set of rules. Automation drives consistency, enforces quality, removes wastage and delivers speed; it is the technical backbone to any DevOps implementation.",
+			"The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced and it produces a new codebase to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas; e.g., Infrastructure as code, automation is one of those things that generally build pace organically.",
+			"Start small with engineering led experimentation; generally, engineers see the value in automation, thus:",
+			"-	Encourage the automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) ",
+			"-	Catalyse discussions of tooling choices and communities of interest, these will eventually generate standards in coding, practices, processes and principles ",
+			"-	Regularly review and continuously review as part of retrospectives",
+			"-	Communicate successes and failures, both can be learned from",
+			"-	Follow good engineering practices; maintain in a version controlled code repository, automate testing, etc.",
+			"When making the case for automation, it is not necessarily about the cost saving – almost certainly not based upon the status quo; e.g., the business case for test automation based upon the current release frequency may not be there, but if that release frequency shifted to once per day would there be a case? It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring mean time to recovery (MTTR) and number of defects in production will display the benefit of automation here; it’s about the speed and the fact it is consistent every time that is important.",
 		"Links" : [
-
+			{
+				"Type" : "eBook",
+				"Text" : "Get started with Red Hat Ansible Tower",
+				"Href" : "https://www.ansible.com/resources/ebooks/get-started-with-red-hat-ansible-tower"
+			},
+			{
+				"Type" : "Whitepapers",
+				"Text" : "Various Ansible Whitepapers",
+				"Href" : "https://www.ansible.com/resources/whitepapers"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "DevOps: Don't create the haystack",
+				"Href" : "https://www.linkedin.com/pulse/devops-dont-create-haystack-chris-baynham-hughes/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "Putting The Dev Into DevOps: Why Your Developers Should Write Terraform Too",
+				"Href" : "https://medium.com/runatlantis/putting-the-dev-into-devops-why-your-developers-should-write-terraform-too-d3c079dfc6a8"
+			},
+			{
+				"Type" : "Whitepapers",
+				"Text" : "Data centre automation",
+				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
+			}
 		]
 	},
 	"Architecture and Design": {
@@ -185,10 +217,8 @@
 		]
 	},
 	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Org Structure, Culture and Incentives",
-		"Links" : [
-			
-		]
+		"Advice" : "Org Structure, Culture and Incentives are all dealt with in seperate sections within this collection of advice. Suffice to say that they are the real x-factor for DevOps success within an organisation, but they are also the hardest/ most disruptive elements to change and get right. Different organisations will have different starting points and catalysts; e.g., successful adoption and results from DevOps tooling practices can help to identify where an organisation is being held back by its Org Structure, Culture and Incentives.",
+	
 	},
 	"CI" : {
 		"Advice" : "Some advice on CI",
@@ -362,7 +392,7 @@
 		]
 	},
 	"Organisation Structure" : {
-		"Advice" : "For successful DevOps, the organisation needs to be structured into teams that are both cross-functional and autonomous.",
+		"Advice" : "For successful DevOps, the organisation needs to be structured into teams that are both cross-functional and autonomous. Many organisational structures are characterised by and aligned to functions rather than the outcomes they need to drive to be innovative/ deliver the strategy. The issue with function based organisational structures is they entrench tribes and hand overs between tribes; things get thrown over the fence to the next tribe to deal with, generally through complaining about the quality from the previous tribe and using up all the time of the tribe after them. It doesn’t support the development of a collaborative culture. Improve the organisational structure and both quality and flow will improve.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -393,7 +423,9 @@
 		]
 	},
 	"Culture" : {
-		"Advice" : "Some advice on culture",
+		"Advice" : "Driving the right culture within the organisation is critical to successful DevOps adoption. It is the X factor for any organisation; an organisation may have the most incredible tool chain in the world, but if they do not collaborate, continuously improve, step out of their traditional/ function based tribes, ensure clear connection between the strategic outcomes they are trying to drive and the software features being built, engage to empower people at all levels, connect everyone to the mission, embrace experimentation, etc. then the full benefits of DevOps will never be truly realised.", 
+			"Culture change is hard, as a result many focus on the tooling aspects of DevOps. Culture change is like a virus in the way it spreads; when first introduced to an organisation it will be attacked by ‘company antibodies’ (“we don’t do it like that here”, etc.) thus, following the analogy, the virus must be strong and continuously fed until it is dominant within the system. ",
+			"There are many culture change models and approaches and never a one size fits all. Success factors include true business engagement and alignment (DevOps is not “an IT problem”), recognising that the “We is stronger than the I” (level 4 corporate culture), meritocratic, free speaking open organisations (command and control does not yield transformational results) and change through demonstration/ delivery; not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models; e.g., using the Satir Model for change, demonstrating a new approach is the ‘transforming idea’ and repeating it is the ‘practice and integration’ that takes an organisation to a new status quo for performance.",
 		"Links" : [
 			{
 				"Type" : "Book",
@@ -421,9 +453,41 @@
 		]
 	},
 	"Incentivisation" : {
-		"Advice" : "Some advice on incentivisation",
-		"Links" : [
-			
+		"Advice" : "The initial purpose of incentivisation in the context of DevOps is to accelerate adoption of new organisational structures and different team dynamics. In this context, personal incentives are less effective at driving the desired behaviours than team incentives. Within a DevOps approach, one wishes to drive ownership of the product/ outcomes and the understanding that those successfully adopting DevOps will "live and die" as a team; this aligns earnings with collaboration, not competition.",
+
+			"Incentives are just about the most controversial topic for any organisation and there are many approaches out there. Making significant changes to incentive structures, especially in large organisations, can be hugely disruptive, controversial and in some cases require agreement from unions/ employee forums, thus there is no perfect implementation we can recommend. Our Advice, however, is to take a cold look at the existing incentives within the organisation and ensure that they are aligned as much as possible to the outcomes that the organisation is looking to achieve through DevOps. ",
+
+			"Some organisations have removed all personal incentives in favour of team only incentives, others will be constrained within a traditional incentive framework/ structure, but can make simple changes like giving weight to actions that support others within the team. What is to be avoided here is giving a bonus to the person that turns up at 3:30am and gets a system back up again, rather than rewarding the person that identifies and fixes the issue at its root cause so it doesn’t fall over again; this is an alarmingly common flaw in may incentive structures. ",
+
+			"Question whether incentives can be used effectively to drive not only DevOps adoption, but tighter unity and collaboration within the DevOps teams themselves; failing to do so frequently results in team members sticking to their tribes - "I'm a Dev, I'm not doing Ops work/ going on call."",
+	
+	"Links" : [
+			{
+				"Type" : "Website",
+				"Text" : "Management 3.0",
+				"Href" : "https://management30.com",
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Merit Money",
+				"Href" : "https://management30.com/practice/merit-money/",
+			},			
+			{
+				"Type" : "Website",
+				"Text" : "OKRs",
+				"Href" : "https://management30.com/practice/okrs/",
+			},			
+			{
+				"Type" : "Website",
+				"Text" : "What motivates your team? Finacial incentives are not the only method!",
+				"Href" : "https://management30.com/practice/moving-motivators/",
+			},		
+			{
+				"Type" : "Book",
+				"Text" : "To understand what elements are important to incentivise",
+				"Text" : "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organisations by Gene Kim, Jez HUmble and Nicole Forsgren",
+				"Href" : "https://www.amazon.co.uk/dp/1942788339/"
+			}	
 		]
 	},
 	"Standardisation" : {
