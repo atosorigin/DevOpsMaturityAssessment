@@ -212,20 +212,50 @@
 		"Advice" : "Org Structure, Culture and Incentives are all dealt with in seperate sections within this collection of advice. Suffice to say that they are the real x-factor for DevOps success within an organisation, but they are also the hardest/ most disruptive elements to change and get right. Different organisations will have different starting points and catalysts; e.g., successful adoption and results from DevOps tooling practices can help to identify where an organisation is being held back by its Org Structure, Culture and Incentives."
 	},
 	"CI" : {
-		"Advice" : "Some advice on CI",
+		"Advice" : "Continuous Integration (CI) is the practice of merging changes back to the main branch as often as possible, even several times a day. The developer's changes are validated by triggering a build and running automated tests against the build. By doing so, you avoid the integration hell that usually happens when people wait until \"release day\" to merge their changes into the main branch. Continuous Integration puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.",
 		"Links" : [
 			{
+				"Type" : "Article",
+				"Text" : "Continuous Integration by Martin Fowler",
+				"Href" : "https://martinfowler.com/articles/continuousIntegration.html"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "FeatureBranch by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FeatureBranch.html"
+			},
+			{
 				"Type" : "Book",
-				"Text" : "Leading the Transformation: Applying Agile and DevOps Principles at Scale by Gary Gruver",
-				"Href" : "https://www.amazon.co.uk/Leading-Transformation-Applying-Devops-Principles/dp/1942788010/",
+				"Text" : "Continuous Integration: Improving Software Quality and Reducing Risk by Paul M. Duvall",
+				"Href" : "https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"CD" : {
-		"Advice" : "Some advice on CD",
+		"Advice" : "Continuous Delivery (CD) as an extension of Continuous Integration and is an approach where, after each build, the software is automatically delivered into a production-like quality assurance environment on which further automated testing is completed. Furthermore, the build can then be easily released into production if desired. Continuous Deployment goes one step further than Continuous Delivery. With this practice, every change that passes all stages of your delivery pipeline is automatically released into production. There is no human intervention, and only a failed test will prevent a new change being deployed.",
 		"Links" : [
-			
+			{
+				"Type" : "Article",
+				"Text" : "Continuous integration vs. continuous delivery vs. continuous deployment by Sten Pittet",
+				"Href" : "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "GitHub Professional Guides: Continuous Integration Continuous Delivery (0:06)",
+				"Href" : "https://www.youtube.com/watch?v=xSv_m3KhUO8"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "CI/CD Introduction (0:04)",
+				"Href" : "https://www.youtube.com/watch?v=AlrImm1T8Wg"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble",
+				"Href" : "https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"TDD" : {
