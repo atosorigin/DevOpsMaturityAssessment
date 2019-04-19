@@ -73,7 +73,7 @@
 				"Href" : "https://www.ansible.com/resources/ebooks/get-started-with-red-hat-ansible-tower"
 			},
 			{
-				"Type" : "Whitepapers",
+				"Type" : "Article",
 				"Text" : "Various Ansible Whitepapers",
 				"Href" : "https://www.ansible.com/resources/whitepapers"
 			},
@@ -88,7 +88,7 @@
 				"Href" : "https://medium.com/runatlantis/putting-the-dev-into-devops-why-your-developers-should-write-terraform-too-d3c079dfc6a8"
 			},
 			{
-				"Type" : "Whitepapers",
+				"Type" : "Article",
 				"Text" : "Data centre automation",
 				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
 			}
