@@ -87,7 +87,7 @@
 	{
 		global $advice, $survey;
 		
-		// If we are providing advice for a section that has sub categories, then include a link to teh detailed report
+		// If we are providing advice for a section that has sub categories, then include a link to the detailed report
 		$detailedReportLink = '';
 		if ( $survey->sections[$survey->SectionNameToIndex($sectionName)]['HasSubCategories'] )
 		{

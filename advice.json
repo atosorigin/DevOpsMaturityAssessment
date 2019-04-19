@@ -183,8 +183,8 @@
 			},
 			{
 				"Type" : "Video",
-					"Text" : "Continuous Delivery - Jez Humble (0:46)",
-					"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
+				"Text" : "Continuous Delivery - Jez Humble (0:46)",
+				"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
 			},
 			{
 				"Type" : "Blog",
@@ -239,6 +239,11 @@
 				"Type" : "Article",
 				"Text" : "Continuous integration vs. continuous delivery vs. continuous deployment by Sten Pittet",
 				"Href" : "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Continuous Delivery",
+				"Href" : "https://continuousdelivery.com/"
 			},
 			{
 				"Type" : "Video",
