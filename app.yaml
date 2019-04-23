@@ -2,9 +2,9 @@ runtime: php55
 
 handlers:
 # Serve images as static resources.
-- url: /(.+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg))$
+- url: /(.+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg|xml|ico|webmanifest))$
   static_files: \1
-  upload: .+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg)$
+  upload: .+\.(eot|svg|ttf|woff|woff2|css|js|gif|png|jpg|xml|ico|webmanifest)$
 
 # Serve php scripts.
 - url: /
