@@ -87,7 +87,7 @@
 	{
 		global $advice, $survey;
 		
-		// If we are providing advice for a section that has sub categories, then include a link to teh detailed report
+		// If we are providing advice for a section that has sub categories, then include a link to the detailed report
 		$detailedReportLink = '';
 		if ( $survey->sections[$survey->SectionNameToIndex($sectionName)]['HasSubCategories'] )
 		{
@@ -95,10 +95,21 @@
 									$sectionName . '</a>.';
 		}
 		
+		// If there is "ReadMore" advice included, create a link for this
+		$readMoreLink = '';
+		if ( isset($advice[$sectionName]['ReadMore']) )
+		{
+			$readMoreAdvice = str_replace('"', '&quot', $advice[$sectionName]['ReadMore']);
+			$readMoreAdvice = str_replace("'", '&lsquo;', $readMoreAdvice);
+			$sectionNameNoSpace = str_replace(' ', '', $sectionName);
+			$readMoreJS = "onclick=\"$('#$sectionNameNoSpace').html('$readMoreAdvice');\"";
+			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
+		}
+		
 		?>
 		
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $detailedReportLink?></p></li>
+			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $readMoreLink . $detailedReportLink?></p></li>
 			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
 				$icon = '';
 				switch ($link['Type']) {
@@ -166,7 +177,9 @@
 											<?=array_keys($resultsSummary)[0]?>
 										</h5>
 										<div class="card-body p-1">
+											<div>
 											<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
+											</div>
 										</div>
 										<div class="card-footer text-center text-white bg-primary">
 											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%

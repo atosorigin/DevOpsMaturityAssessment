@@ -161,7 +161,8 @@
 		<link rel="stylesheet" href="fontawesome/css/all.css" rel="stylesheet">
 
 		<title>DevOps Maturity Assessment</title>
-		<script src="./js/chart.bundle.min.js"></script>		
+		<script src="./js/chart.bundle.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>		
 		<style>
 			#bigwrapper {
 				background-color: RGB(255, 255, 255);

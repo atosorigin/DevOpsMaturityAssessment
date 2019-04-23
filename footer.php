@@ -3,8 +3,7 @@
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 ?>
 
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- Popper.js first, then Bootstrap JS -->
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		

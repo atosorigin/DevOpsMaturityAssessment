@@ -65,9 +65,36 @@
 		]
 	},
 	"Automation" : {
-		"Advice" : "Some advice on how to do automation",
+		"Advice" : "Automation is critical to shortening the lead time for software delivery. If quality and speed are to be transformed, automation is essential. It enables environments to be provisioned and configured identically every time. It enables application code to be built, tested, delivered, provisioned and configured easily. And it enables environments to be monitored and incidents (including security threats) to be responded to based upon a set of rules. Automation drives consistency, enforces quality, removes wastage and delivers speed; it is the technical backbone to any DevOps implementation.",
+		
+		"ReadMore" : "The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced, and it produces a new code base to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas (e.g. Infrastructure as Code) automation is one of those things that generally builds pace organically. Start small with engineering led experimentation as, generally, engineers see the value in automation. We suggest that you: <p />- Encourage the automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) <p />- Catalyse discussions of automation tooling choices via communities of interest, these will eventually generate standards in coding, practices, processes and principles <p />- Regularly review and continuously review automation as part of retrospectives <p />- Communicate automation successes and failures (both can be learned from!) <p />- Follow good engineering practices: for example, maintain automation code in a version controlled code repository <p />When making the case for automation, it is not necessarily about the cost saving (almost certainly not based upon the status quo). For example, the business case for test automation based upon the current release frequency may not make sense, but if that release frequency shifts to once per day it would do. It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring mean time to recovery (MTTR) and number of defects in production will display the benefit of automation here. Ultimately the benefits of automation are speed and consistency.",
+		
 		"Links" : [
-
+			{
+				"Type" : "Book",
+				"Text" : "Get started with Red Hat Ansible Tower",
+				"Href" : "https://www.ansible.com/resources/ebooks/get-started-with-red-hat-ansible-tower"
+			},
+			{
+				"Type" : "Article",
+				"Text" : "Various Ansible Whitepapers",
+				"Href" : "https://www.ansible.com/resources/whitepapers"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "DevOps: Don't create the haystack",
+				"Href" : "https://www.linkedin.com/pulse/devops-dont-create-haystack-chris-baynham-hughes/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "Putting The Dev Into DevOps: Why Your Developers Should Write Terraform Too",
+				"Href" : "https://medium.com/runatlantis/putting-the-dev-into-devops-why-your-developers-should-write-terraform-too-d3c079dfc6a8"
+			},
+			{
+				"Type" : "Article",
+				"Text" : "Data centre automation",
+				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
+			}
 		]
 	},
 	"Architecture and Design": {
@@ -159,8 +186,8 @@
 			},
 			{
 				"Type" : "Video",
-					"Text" : "Continuous Delivery - Jez Humble (0:46)",
-					"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
+				"Text" : "Continuous Delivery - Jez Humble (0:46)",
+				"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
 			},
 			{
 				"Type" : "Blog",
@@ -185,26 +212,85 @@
 		]
 	},
 	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Org Structure, Culture and Incentives",
+		"Advice" : "Org Structure, Culture and Incentives are the real X Factor for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "The Benefits of Feature Teams by Mike Cohn",
+				"Href" : "https://www.mountaingoatsoftware.com/blog/the-benefits-of-feature-teams"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Spotify Engineering Culture",
+				"Href" : "https://vimeo.com/85490944"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "The Open Organization Field Guide",
+				"Href" : "https://opensource.com/open-organization/resources/field-guide"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Management 3.0",
+				"Href" : "https://management30.com"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
+				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
+			}
 		]
 	},
 	"CI" : {
-		"Advice" : "Some advice on CI",
+		"Advice" : "Continuous Integration (CI) is the practice of merging changes back to the main branch as often as possible, even several times a day. The developer's changes are validated by triggering a build and running automated tests against the build. By doing so, you avoid the integration hell that usually happens when people wait until \"release day\" to merge their changes into the main branch. Continuous Integration puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.",
 		"Links" : [
 			{
+				"Type" : "Article",
+				"Text" : "Continuous Integration by Martin Fowler",
+				"Href" : "https://martinfowler.com/articles/continuousIntegration.html"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "FeatureBranch by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/FeatureBranch.html"
+			},
+			{
 				"Type" : "Book",
-				"Text" : "Leading the Transformation: Applying Agile and DevOps Principles at Scale by Gary Gruver",
-				"Href" : "https://www.amazon.co.uk/Leading-Transformation-Applying-Devops-Principles/dp/1942788010/",
+				"Text" : "Continuous Integration: Improving Software Quality and Reducing Risk by Paul M. Duvall",
+				"Href" : "https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"CD" : {
-		"Advice" : "Some advice on CD",
+		"Advice" : "Continuous Delivery (CD) as an extension of Continuous Integration and is an approach where, after each build, the software is automatically delivered into a production-like quality assurance environment on which further automated testing is completed. Furthermore, the build can then be easily released into production if desired. Continuous Deployment goes one step further than Continuous Delivery. With this practice, every change that passes all stages of your delivery pipeline is automatically released into production. There is no human intervention, and only a failed test will prevent a new change being deployed.",
 		"Links" : [
-			
+			{
+				"Type" : "Article",
+				"Text" : "Continuous integration vs. continuous delivery vs. continuous deployment by Sten Pittet",
+				"Href" : "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Continuous Delivery",
+				"Href" : "https://continuousdelivery.com/"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "GitHub Professional Guides: Continuous Integration Continuous Delivery (0:06)",
+				"Href" : "https://www.youtube.com/watch?v=xSv_m3KhUO8"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "CI/CD Introduction (0:04)",
+				"Href" : "https://www.youtube.com/watch?v=AlrImm1T8Wg"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble",
+				"Href" : "https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912",
+				"Paid" : "Yes"
+			}
 		]
 	},
 	"TDD" : {
@@ -294,9 +380,43 @@
 		]
 	},
 	"Environments" : {
-		"Advice" : "Some advice on automating environments",
+		"Advice" : "Automation of the provisioning, configuration and management of environments (such as development, QA and Production) is a cornerstone of DevOps adoption. There are many tools and methodologies that can be adopted to automate the various layers involved: automated monitoring, patching, build and configuration management, as well as simple provisioning. The use of abstraction techniques, such as containerisation, is being widely adopted to simplify such automation.",
 		"Links" : [
-			
+			{
+				"Type" : "Blog",
+				"Text" : "One year using Kubernetes in production: Lessons learned by Paul Bakker",
+				"Href" : "https://techbeacon.com/devops/one-year-using-kubernetes-production-lessons-learned"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "10 automation tools your DevOps team can not live without Matt Shealy",
+				"Href" : "https://bigdata-madesimple.com/10-automation-tools-your-devops-team-cant-live-without/"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "DevOpsChat: Containerisation for DevOps with Miska Kaipiainen (00:19)",
+				"Href" : "https://www.youtube.com/watch?v=8mR4q-roSHk"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "10 Devops Tools For Infrastructure Automation And Monitoring",
+				"Href" : "https://devopscube.com/devops-tools-for-infrastructure-automation/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Continuous Delivery Foundation (CDF)",
+				"Href" : "https://cd.foundation/about/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "8 CI/CD Best Practices for Your DevOps Journey by Kristin Baskett",
+				"Href" : "https://www.cloudbees.com/blog/8-cicd-best-practices-your-devops-journey"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "DevOps automation best practices: How much is too much? by David Linthicum",
+				"Href" : "https://techbeacon.com/devops/devops-automation-best-practices-how-much-too-much"
+			}
 		]
 	},
 	"Testing" : {
@@ -363,6 +483,9 @@
 	},
 	"Organisation Structure" : {
 		"Advice" : "For successful DevOps, the organisation needs to be structured into teams that are both cross-functional and autonomous.",
+		
+		"ReadMore" : "Many organisational structures are characterised by and aligned to functions (specialisms) rather than the outcomes that are needed for the business. The issue with function-based organisational structures is that they tend to lead to a lot of handovers between teams; things get thrown over the fence for the next team to deal with, generally by complaining about the quality from the previous team and using up all the time of the team after them. It doesn't support the development of a collaborative culture. Improve the organisational structure and both quality and flow will improve.",
+		
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -393,7 +516,9 @@
 		]
 	},
 	"Culture" : {
-		"Advice" : "Some advice on culture",
+		"Advice" : "Driving the right culture within an organisation is critical for successful DevOps adoption. It is the \"X  Factor\" for any organisation. An organisation may have the most incredible tool chain in the world, but if they do not collaborate, continuously improve, step out of their traditional/functionally based tribes, ensure clear connection between the strategic outcomes they are trying to drive and the software features being built, engage to empower people at all levels, connect everyone to the mission and embrace experimentation, then the full benefits of DevOps will never be truly realised.",
+		
+		"ReadMore" : "<p />Culture change is hard and, as a result, many choose to focus on the tooling aspects of DevOps. Culture change is like a virus in the way it spreads; when first introduced to an organisation it will be attacked by \"company antibodies\" (e.g. \"we don’t do it like that here\"). Thus, taking the analogy further, the virus must be strong and continuously fed until it is dominant within the system. <p /> There are many culture change models and approaches and one size does not fit all. Success factors include true business engagement and alignment (DevOps is not \"an IT problem\"), recognising that the \"We is stronger than the I\", a meritocratic, free speaking open organisation (command and control does not yield transformational results), and change through demonstration/delivery (not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models (e.g. using the Satir Model for change, demonstrating a new approach is the \"transforming idea\" and repeating it is the \"practice and integration\" that takes an organisation to a new status quo for performance).",
 		"Links" : [
 			{
 				"Type" : "Book",
@@ -421,9 +546,36 @@
 		]
 	},
 	"Incentivisation" : {
-		"Advice" : "Some advice on incentivisation",
-		"Links" : [
-			
+		"Advice" : "For DevOps personal incentives are less effective at driving the desired behaviors than team incentives. Within a DevOps approach, one wishes to drive ownership of the product/outcomes and the understanding that those successfully adopting DevOps will \"live and die\" as a team; this aligns earnings with collaboration, not competition.",
+		
+		"ReadMore" : "<p />Incentives are just about the most controversial topic for any organisation, and there are many possible approaches. Making significant changes to incentive structures, especially in large organisations, can be hugely disruptive, controversial and, in some cases, require agreement from unions/employee forums, thus there is no perfect implementation we can recommend. Our advice, however, is to take a fresh look at the existing incentives within the organisation and ensure that they are aligned as much as possible to the outcomes that the organisation is looking to achieve through DevOps. <p />Some organisations have removed all personal incentives in favour of team only incentives, others are constrained within a traditional incentive framework/structure, but can make simple changes like giving weight to actions that support others within the team. What is to be avoided is giving a bonus to the person that turns up at 3:30am and gets a system back up again, rather than rewarding the person who identifies and fixes the issue at its root cause so it doesn’t fall over again; this is an alarmingly common flaw in may incentive structures. <p />Question whether incentives can be used effectively to drive not only DevOps adoption, but tighter unity and collaboration within the DevOps teams themselves. Failing to do so frequently results in team members sticking to their tribes, e.g. \"I'm a Dev, I'm not doing Ops work/going on call.\"",
+	"Links" : [
+			{
+				"Type" : "Website",
+				"Text" : "Management 3.0",
+				"Href" : "https://management30.com"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
+				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
+			},
+{
+				"Type" : "Blog",
+				"Text" : "Introducing Open Salaries at Buffer: Our Transparent Formula and All Individual Salaries by Joel Gascoigne",
+				"Href" : "https://open.buffer.com/introducing-open-salaries-at-buffer-including-our-transparent-formula-and-all-individual-salaries/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Holocracy.org",
+				"Href" : "https://www.holacracy.org/"
+			},			
+			{
+				"Type" : "Book",
+				"Text" : "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organisations by Gene Kim, Jez HUmble and Nicole Forsgren",
+				"Href" : "https://www.amazon.co.uk/dp/1942788339/",
+				"Paid" : "Yes"
+			}	
 		]
 	},
 	"Standardisation" : {
