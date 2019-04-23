@@ -6,7 +6,13 @@ This is a simple, survey-based tool, to help teams assess where they currently a
 
 ## Installation
 
-This is a PHP application that should run on any server that supports PHP 5.6 or higher with Mod_Rewrite enabled. 
+This is a PHP application that should run on any server that supports PHP 5.6 or higher with Mod_Rewrite enabled. We have also provided an [app.yaml](https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/app.yaml) for deployment into [Google App Engine](https://cloud.google.com/appengine/).
+
+## How to Contribute
+
+Fork us and submit a pull request! If you are updating [questions.json](https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/questions.json) or [advice.json](https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/advice.json), please check that it passes a JSON validator (such as [JSONLint](https://jsonlint.com/)).
+
+If you would like to adjust colours/branding for your own purpose, please do this in a separate branch. For example, we maintain the atos-colours branch, but changes to the main code are always merged into atos-colours from master.
 
 ## Technical Overview
 
