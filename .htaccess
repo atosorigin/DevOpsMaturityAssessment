@@ -3,6 +3,7 @@
 
 RewriteEngine On # Turn on the rewriting engine
 RewriteRule		^$					about.php [NC,L]
-RewriteRule		^section-.*$		collectResponses.php [NC,L]
-RewriteRule		^results.*$			viewResults.php	[NC,L]
-RewriteRule		^about$				about.php		[NC,L]
+RewriteRule		^section-.*$		collectResponses.php 	[NC,L]
+RewriteRule		^results.*$			viewResults.php			[NC,L]
+RewriteRule		^about$				about.php				[NC,L]
+RewriteRule		^resources$			viewResources.php		[NC,L]
