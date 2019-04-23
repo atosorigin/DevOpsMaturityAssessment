@@ -17,7 +17,7 @@
 			},
 			{
 				"Type" : "Video",
-				"Text" : "The Systems Thinking Approach to Introducing Kanban - David Anderson(1:31)",
+				"Text" : "The Systems Thinking Approach to Introducing Kanban - David Anderson (1:31)",
 				"Href" : "https://vimeo.com/46272041"
 			},
 			{
@@ -94,6 +94,108 @@
 				"Type" : "Article",
 				"Text" : "Data centre automation",
 				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
+			}
+		]
+	},
+	"Environments" : {
+		"Advice" : "Automation of the provisioning, configuration and management of environments (such as development, QA and Production) is a cornerstone of DevOps adoption. There are many tools and methodologies that can be adopted to automate the various layers involved: automated monitoring, patching, build and configuration management, as well as simple provisioning. The use of abstraction techniques, such as containerisation, is being widely adopted to simplify such automation.",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "One year using Kubernetes in production: Lessons learned by Paul Bakker",
+				"Href" : "https://techbeacon.com/devops/one-year-using-kubernetes-production-lessons-learned"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "10 automation tools your DevOps team can not live without Matt Shealy",
+				"Href" : "https://bigdata-madesimple.com/10-automation-tools-your-devops-team-cant-live-without/"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "DevOpsChat: Containerisation for DevOps with Miska Kaipiainen (00:19)",
+				"Href" : "https://www.youtube.com/watch?v=8mR4q-roSHk"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "10 Devops Tools For Infrastructure Automation And Monitoring",
+				"Href" : "https://devopscube.com/devops-tools-for-infrastructure-automation/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Continuous Delivery Foundation (CDF)",
+				"Href" : "https://cd.foundation/about/"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "8 CI/CD Best Practices for Your DevOps Journey by Kristin Baskett",
+				"Href" : "https://www.cloudbees.com/blog/8-cicd-best-practices-your-devops-journey"
+			},
+			{
+				"Type" : "Blog",
+				"Text" : "DevOps automation best practices: How much is too much? by David Linthicum",
+				"Href" : "https://techbeacon.com/devops/devops-automation-best-practices-how-much-too-much"
+			}
+		]
+	},
+	"Testing" : {
+		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enabled new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
+		"Links" : [
+			{
+				"Type" : "Blog",
+				"Text" : "TestPyramid by Martin Fowler",
+				"Href" : "https://martinfowler.com/bliki/TestPyramid.html"
+			},
+			{
+				"Type" : "Article",
+				"Text" : "The Practical Test Pyramid by Martin Fowler",
+				"Href" : "https://martinfowler.com/articles/practical-test-pyramid.html"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Automation Testing Tutorial for Beginners (0:07)",
+				"Href" : "https://www.youtube.com/watch?v=RbSlW8jZFe8"
+			},
+			{
+				"Type" : "Video",
+				"Text" : "Netflix Automation Talks - Test Automation at Scale (1:16)",
+				"Href" : "https://www.youtube.com/watch?v=FrBN94gUn_I"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
+				"Href" : "https://www.amazon.com/Test-Driven-Development-Practical-Guide/dp/0131016490",
+				"Paid" : "Yes"
+			},
+			{
+				"Type" : "Book",
+				"Text" : "Working Effectively with Legacy Code by Michael Feathers",
+				"Href" : "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/",
+				"Paid" : "Yes"
+			}
+		]
+	},
+	"Static Analysis" : {
+		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on some version of the source code, and in the other cases, some form of the object code. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
+		"Links" : [
+			{
+				"Type" : "Video",
+				"Text" : "Static Code Analysis: Scan All Your Code For Bugs - Dr. Jared DeMott (0:19)",
+				"Href" : "https://www.youtube.com/watch?v=Heor8BVa4A0"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "SonarQube",
+				"Href" : "https://www.sonarqube.org/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Coverity Scan",
+				"Href" : "https://scan.coverity.com/"
+			},
+			{
+				"Type" : "Website",
+				"Text" : "Klocwork",
+				"Href" : "https://www.roguewave.com/products-services/klocwork"
 			}
 		]
 	},
@@ -208,36 +310,6 @@
 				"Type" : "Blog",
 				"Text" : "Code Reviews: Just Do It by Jeff Atwood",
 				"Href" : "https://blog.codinghorror.com/code-reviews-just-do-it/"
-			}
-		]
-	},
-	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Org Structure, Culture and Incentives are the real X Factor for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
-		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "The Benefits of Feature Teams by Mike Cohn",
-				"Href" : "https://www.mountaingoatsoftware.com/blog/the-benefits-of-feature-teams"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Spotify Engineering Culture",
-				"Href" : "https://vimeo.com/85490944"
-			},
-			{
-				"Type" : "Book",
-				"Text" : "The Open Organization Field Guide",
-				"Href" : "https://opensource.com/open-organization/resources/field-guide"
-			},
-			{
-				"Type" : "Website",
-				"Text" : "Management 3.0",
-				"Href" : "https://management30.com"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
-				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
 			}
 		]
 	},
@@ -379,105 +451,33 @@
 			}
 		]
 	},
-	"Environments" : {
-		"Advice" : "Automation of the provisioning, configuration and management of environments (such as development, QA and Production) is a cornerstone of DevOps adoption. There are many tools and methodologies that can be adopted to automate the various layers involved: automated monitoring, patching, build and configuration management, as well as simple provisioning. The use of abstraction techniques, such as containerisation, is being widely adopted to simplify such automation.",
+	"Org Structure, Culture and Incentives" : {
+		"Advice" : "Org Structure, Culture and Incentives are the real X Factor for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "One year using Kubernetes in production: Lessons learned by Paul Bakker",
-				"Href" : "https://techbeacon.com/devops/one-year-using-kubernetes-production-lessons-learned"
-			},
-			{
-				"Type" : "Blog",
-				"Text" : "10 automation tools your DevOps team can not live without Matt Shealy",
-				"Href" : "https://bigdata-madesimple.com/10-automation-tools-your-devops-team-cant-live-without/"
+				"Text" : "The Benefits of Feature Teams by Mike Cohn",
+				"Href" : "https://www.mountaingoatsoftware.com/blog/the-benefits-of-feature-teams"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "DevOpsChat: Containerisation for DevOps with Miska Kaipiainen (00:19)",
-				"Href" : "https://www.youtube.com/watch?v=8mR4q-roSHk"
-			},
-			{
-				"Type" : "Blog",
-				"Text" : "10 Devops Tools For Infrastructure Automation And Monitoring",
-				"Href" : "https://devopscube.com/devops-tools-for-infrastructure-automation/"
-			},
-			{
-				"Type" : "Website",
-				"Text" : "Continuous Delivery Foundation (CDF)",
-				"Href" : "https://cd.foundation/about/"
-			},
-			{
-				"Type" : "Blog",
-				"Text" : "8 CI/CD Best Practices for Your DevOps Journey by Kristin Baskett",
-				"Href" : "https://www.cloudbees.com/blog/8-cicd-best-practices-your-devops-journey"
-			},
-			{
-				"Type" : "Blog",
-				"Text" : "DevOps automation best practices: How much is too much? by David Linthicum",
-				"Href" : "https://techbeacon.com/devops/devops-automation-best-practices-how-much-too-much"
-			}
-		]
-	},
-	"Testing" : {
-		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enabled new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
-		"Links" : [
-			{
-				"Type" : "Blog",
-				"Text" : "TestPyramid by Martin Fowler",
-				"Href" : "https://martinfowler.com/bliki/TestPyramid.html"
-			},
-			{
-				"Type" : "Article",
-				"Text" : "The Practical Test Pyramid by Martin Fowler",
-				"Href" : "https://martinfowler.com/articles/practical-test-pyramid.html"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Automation Testing Tutorial for Beginners (0:07)",
-				"Href" : "https://www.youtube.com/watch?v=RbSlW8jZFe8"
-			},
-			{
-				"Type" : "Video",
-				"Text" : "Netflix Automation Talks - Test Automation at Scale (1:16)",
-				"Href" : "https://www.youtube.com/watch?v=FrBN94gUn_I"
+				"Text" : "Spotify Engineering Culture",
+				"Href" : "https://vimeo.com/85490944"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
-				"Href" : "https://www.amazon.com/Test-Driven-Development-Practical-Guide/dp/0131016490",
-				"Paid" : "Yes"
+				"Text" : "The Open Organization Field Guide",
+				"Href" : "https://opensource.com/open-organization/resources/field-guide"
 			},
 			{
-				"Type" : "Book",
-				"Text" : "Working Effectively with Legacy Code by Michael Feathers",
-				"Href" : "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/",
-				"Paid" : "Yes"
-			}
-		]
-	},
-	"Static Analysis" : {
-		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on some version of the source code, and in the other cases, some form of the object code. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
-		"Links" : [
+				"Type" : "Website",
+				"Text" : "Management 3.0",
+				"Href" : "https://management30.com"
+			},
 			{
 				"Type" : "Video",
-				"Text" : "Static Code Analysis: Scan All Your Code For Bugs - Dr. Jared DeMott (0:19)",
-				"Href" : "https://www.youtube.com/watch?v=Heor8BVa4A0"
-			},
-			{
-				"Type" : "Website",
-				"Text" : "SonarQube",
-				"Href" : "https://www.sonarqube.org/"
-			},
-			{
-				"Type" : "Website",
-				"Text" : "Coverity Scan",
-				"Href" : "https://scan.coverity.com/"
-			},
-			{
-				"Type" : "Website",
-				"Text" : "Klocwork",
-				"Href" : "https://www.roguewave.com/products-services/klocwork"
+				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
+				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
 			}
 		]
 	},

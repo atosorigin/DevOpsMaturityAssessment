@@ -16,6 +16,7 @@
 				'Download CSV' => array('Url' => 'devops-maturity-csv.php', 'Type' => 'Standard'),
 				'Divider1' => array('Type' =>'Divider') ) ),
 				// Sub-menus for detailed reports are added here, see below
+		'Resources' => array ('Url' => 'resources', 'Type' => 'Standard' ),
 		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) );
 	
 	// Add the sub-menus for each page of the survey, and also for the detailed reports
