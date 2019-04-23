@@ -95,10 +95,19 @@
 									$sectionName . '</a>.';
 		}
 		
+		// If there is "ReadMore" advice included, create a link for this
+		$readMoreLink = '';
+		if ( isset($advice[$sectionName]['ReadMore']) )
+		{
+			$readMoreAdvice = $advice[$sectionName]['ReadMore'];
+			$readMoreJS = "onclick=\"$('#$sectionName').html('$readMoreAdvice');\"";
+			$readMoreLink = '</p><p id="' . $sectionName . '"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
+		}
+		
 		?>
 		
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $detailedReportLink?></p></li>
+			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $readMoreLink . $detailedReportLink?></p></li>
 			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
 				$icon = '';
 				switch ($link['Type']) {
@@ -166,7 +175,12 @@
 											<?=array_keys($resultsSummary)[0]?>
 										</h5>
 										<div class="card-body p-1">
+											<div>
 											<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
+											</div>
+											<p id="readmore">
+												<a href="#/" onclick="$('#readmore').text('hello');">Read more</a>
+											</p>
 										</div>
 										<div class="card-footer text-center text-white bg-primary">
 											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
