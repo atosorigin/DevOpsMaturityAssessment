@@ -99,9 +99,11 @@
 		$readMoreLink = '';
 		if ( isset($advice[$sectionName]['ReadMore']) )
 		{
-			$readMoreAdvice = $advice[$sectionName]['ReadMore'];
-			$readMoreJS = "onclick=\"$('#$sectionName').html('$readMoreAdvice');\"";
-			$readMoreLink = '</p><p id="' . $sectionName . '"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
+			$readMoreAdvice = str_replace('"', '&quot', $advice[$sectionName]['ReadMore']);
+			$readMoreAdvice = str_replace("'", '&lsquo;', $readMoreAdvice);
+			$sectionNameNoSpace = str_replace(' ', '', $sectionName);
+			$readMoreJS = "onclick=\"$('#$sectionNameNoSpace').html('$readMoreAdvice');\"";
+			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
 		}
 		
 		?>
@@ -178,9 +180,6 @@
 											<div>
 											<?php RenderAdvice(array_keys($resultsSummary)[0]) ?>
 											</div>
-											<p id="readmore">
-												<a href="#/" onclick="$('#readmore').text('hello');">Read more</a>
-											</p>
 										</div>
 										<div class="card-footer text-center text-white bg-primary">
 											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
