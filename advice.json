@@ -40,7 +40,7 @@
 		]
 	},
 	"Collaboration" : {
-		"Advice" : "Consider whether you have the tools necessaary to enable effective communication within and outside of the team. Also think about how effective the team's interpersonal habits are for enabling a fast, low-friction and precise exchange of ideas and emotions.",
+		"Advice" : "Consider whether you have the tools necessary to enable effective communication within and outside of the team. Also think about how effective the team's interpersonal habits are for enabling a fast, low-friction and precise exchange of ideas and emotions.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -67,7 +67,7 @@
 	"Automation" : {
 		"Advice" : "Automation is critical to shortening the lead time for software delivery. If quality and speed are to be transformed, automation is essential. It enables environments to be provisioned and configured identically every time. It enables application code to be built, tested, delivered, provisioned and configured easily. And it enables environments to be monitored and incidents (including security threats) to be responded to based upon a set of rules. Automation drives consistency, enforces quality, removes wastage and delivers speed; it is the technical backbone to any DevOps implementation.",
 		
-		"ReadMore" : "The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced, and it produces a new code base to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas (e.g. Infrastructure as Code) automation is one of those things that generally builds pace organically. Start small with engineering led experimentation as, generally, engineers see the value in automation. We suggest that you: <p />- Encourage the automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) <p />- Catalyse discussions of automation tooling choices via communities of interest, these will eventually generate standards in coding, practices, processes and principles <p />- Regularly review and continuously review automation as part of retrospectives <p />- Communicate automation successes and failures (both can be learned from!) <p />- Follow good engineering practices: for example, maintain automation code in a version controlled code repository <p />When making the case for automation, it is not necessarily about the cost saving (almost certainly not based upon the status quo). For example, the business case for test automation based upon the current release frequency may not make sense, but if that release frequency shifts to once per day it would do. It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring mean time to recovery (MTTR) and number of defects in production will display the benefit of automation here. Ultimately the benefits of automation are speed and consistency.",
+		"ReadMore" : "The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced, and it produces a new code base to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas (e.g. Infrastructure as Code) automation is one of those things that generally builds pace organically. Start small with engineering led experimentation as, generally, engineers see the value in automation. We suggest that you: <p />- Encourage the automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) <p />- Catalyse discussions of automation tooling choices via communities of interest, these will eventually generate standards in coding, practices, processes and principles <p />- Continuously review automation as part of retrospectives <p />- Communicate automation successes and failures (both can be learned from!) <p />- Follow good engineering practices: for example, maintain automation code in a version controlled code repository <p />When making the case for automation, it is not necessarily about the cost saving (almost certainly not based upon the status quo). For example, the business case for test automation based upon the current release frequency may not make sense, but if that release frequency shifts to once per day it would do. It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring the mean time to recovery (MTTR) and the number of defects in production will display the benefit of automation here. Ultimately the benefits of automation are speed and consistency.",
 		
 		"Links" : [
 			{
@@ -82,17 +82,17 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "DevOps: Don't create the haystack",
+				"Text" : "DevOps: Don't create the haystack by Chris Baynham-Hughes",
 				"Href" : "https://www.linkedin.com/pulse/devops-dont-create-haystack-chris-baynham-hughes/"
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "Putting The Dev Into DevOps: Why Your Developers Should Write Terraform Too",
+				"Text" : "Putting The Dev Into DevOps: Why Your Developers Should Write Terraform Too by Luke Kysow",
 				"Href" : "https://medium.com/runatlantis/putting-the-dev-into-devops-why-your-developers-should-write-terraform-too-d3c079dfc6a8"
 			},
 			{
 				"Type" : "Article",
-				"Text" : "Data centre automation",
+				"Text" : "Data Center Automation (Atos Whitepaper)",
 				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
 			}
 		]
@@ -138,7 +138,7 @@
 		]
 	},
 	"Testing" : {
-		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enabled new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
+		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enables new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -175,7 +175,7 @@
 		]
 	},
 	"Static Analysis" : {
-		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on some version of the source code, and in the other cases, some form of the object code. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
+		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on a version of the source code but, in other cases, a version of the object code. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
 		"Links" : [
 			{
 				"Type" : "Video",
@@ -229,19 +229,19 @@
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations",
+				"Text" : "The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations by Gene Kim, Jez Humble, Patrick Debois and John Willis",
 				"Href" : "https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services",
+				"Text" : "The Practice of Cloud System Administration: DevOps and SRE Practices for Web Services by Thomas A. Limoncelli, Strata R. Chalup and Christina J. Hogan",
 				"Href" : "https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Practical DevOps: Implement DevOps in your organization by effectively building, deploying, testing, and monitoring code",
+				"Text" : "Practical DevOps: Implement DevOps in your organization by effectively building, deploying, testing, and monitoring code by Joakim Verona",
 				"Href" : "https://www.amazon.com/Practical-DevOps-organization-effectively-monitoring/dp/1788392574/",
 				"Paid" : "Yes"
 			},
@@ -257,7 +257,7 @@
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Ansible: Up and Running: Automating Configuration Management and Deployment the Easy Way",
+				"Text" : "Ansible: Up and Running: Automating Configuration Management and Deployment the Easy Way by Lorin Hochstein and Rene Moser",
 				"Href" : "https://www.amazon.com/_/dp/1491979801",
 				"Paid" : "Yes"
 			},
@@ -366,7 +366,7 @@
 		]
 	},
 	"TDD" : {
-		"Advice" : "Test Driven Development (TDD) is an approach to developing software where automated tests are written before production code. This ensures that an up-to-date automated tests are always maintained and makes it easier and less risky to make changes to software.",
+		"Advice" : "Test Driven Development (TDD) is an approach to developing software where automated tests are written before production code. This ensures that up-to-date automated tests are always maintained and makes it easier and less risky to make changes to software.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -452,7 +452,7 @@
 		]
 	},
 	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Org Structure, Culture and Incentives are the real X Factor for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
+		"Advice" : "Org Structure, Culture and Incentives are critical for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -516,13 +516,13 @@
 		]
 	},
 	"Culture" : {
-		"Advice" : "Driving the right culture within an organisation is critical for successful DevOps adoption. It is the \"X  Factor\" for any organisation. An organisation may have the most incredible tool chain in the world, but if they do not collaborate, continuously improve, step out of their traditional/functionally based tribes, ensure clear connection between the strategic outcomes they are trying to drive and the software features being built, engage to empower people at all levels, connect everyone to the mission and embrace experimentation, then the full benefits of DevOps will never be truly realised.",
+		"Advice" : "Driving the right culture within an organisation is critical for successful DevOps adoption. It is the \"X  Factor\" for any organisation. An organisation may have the most incredible tool chain in the world, but if they do not collaborate, continuously improve, step out of their traditional/functionally based tribes, ensure clear connection between the desired strategic and the software features being built, engage and empower people at all levels, connect everyone to the mission and embrace experimentation, then the full benefits of DevOps will never be truly realised.",
 		
-		"ReadMore" : "<p />Culture change is hard and, as a result, many choose to focus on the tooling aspects of DevOps. Culture change is like a virus in the way it spreads; when first introduced to an organisation it will be attacked by \"company antibodies\" (e.g. \"we don’t do it like that here\"). Thus, taking the analogy further, the virus must be strong and continuously fed until it is dominant within the system. <p /> There are many culture change models and approaches and one size does not fit all. Success factors include true business engagement and alignment (DevOps is not \"an IT problem\"), recognising that the \"We is stronger than the I\", a meritocratic, free speaking open organisation (command and control does not yield transformational results), and change through demonstration/delivery (not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models (e.g. using the Satir Model for change, demonstrating a new approach is the \"transforming idea\" and repeating it is the \"practice and integration\" that takes an organisation to a new status quo for performance).",
+		"ReadMore" : "<p />Culture change is hard and, as a result, many choose to focus on the tooling aspects of DevOps. Culture change is like a virus in the way it spreads: when first introduced to an organisation it will be attacked by \"company antibodies\" (e.g. \"we don’t do it like that here\"). Thus, taking the analogy further, the virus must be strong and continuously fed until it is dominant within the system. <p /> There are many culture change models and approaches and one size does not fit all. Success factors include true business engagement and alignment (DevOps is not \"an IT problem\"), recognising that the \"We is stronger than the I\", a meritocratic, free speaking, open organisation (command and control does not yield transformational results), and change through demonstration/delivery (not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models (e.g. using the Satir Model for change, demonstrating a new approach is the \"transforming idea\" and repeating it is the \"practice and integration\" that takes an organisation to a new status quo for performance).",
 		"Links" : [
 			{
 				"Type" : "Book",
-				"Text" : "Tribal Leadership Revised Edition: Leveraging Natural Groups to Build a Thriving Organization",
+				"Text" : "Tribal Leadership Revised Edition: Leveraging Natural Groups to Build a Thriving Organization by Dave Logan, John King and Halee Fischer-Wright",
 				"Href" : "https://www.amazon.com/Tribal-Leadership-Leveraging-Thriving-Organization/dp/0061251321/",
 				"Paid" : "Yes"
 			},
@@ -572,7 +572,7 @@
 			},			
 			{
 				"Type" : "Book",
-				"Text" : "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organisations by Gene Kim, Jez HUmble and Nicole Forsgren",
+				"Text" : "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organisations by Gene Kim, Jez Humble and Nicole Forsgren",
 				"Href" : "https://www.amazon.co.uk/dp/1942788339/",
 				"Paid" : "Yes"
 			}	
