@@ -55,7 +55,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are the most experienced team members are allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
+				"QuestionText" : "Are the most experienced team members allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
 			},
 			{
 				"Type" : "Checkbox",
@@ -118,7 +118,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "How frequently are their misunderstandings between members of the team?",
+				"QuestionText" : "How frequently are there misunderstandings between members of the team?",
 				"Answers" : [
 					{"Answer" : "Hardly ever", "Score" : 1},
 					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
@@ -127,7 +127,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?",
+				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and are they fairly represented?",
 				"Answers" : [
 					{"Answer" : "Yes, always", "Score" : 1},
 					{"Answer" : "Yes, most of the time", "Score" : 0.5},
@@ -160,6 +160,7 @@
 				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
 				"Answers" : [
 					{"Answer" : "Virtual machine(s)", "Score" : 1},
+					{"Answer" : "Networks", "Score" : 1},
 					{"Answer" : "The application stack", "Score" : 1},
 					{"Answer" : "The application", "Score" : 1}
 					]
@@ -255,7 +256,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is code developed to achieve automation developed with the same rigor as product code (e.g. testing, source control)?"
+				"QuestionText" : "Is automation code developed with the same rigor as product code (e.g. testing, source control)?"
 			}			
 		]
 	},
@@ -265,7 +266,7 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the architecture of the application consists of loosely coupled components (choose the most accurate description)?",
+				"QuestionText" : "Does the architecture of the application consist of loosely coupled components (choose the most accurate description)?",
 				"Answers" : [
 					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
 					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
@@ -295,7 +296,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are all application logs are written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
+				"QuestionText" : "Are all application logs written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
 			}
 		]
 	},
@@ -360,7 +361,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "CI",
-				"QuestionText" : "Are adequate notifications are in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
+				"QuestionText" : "Are adequate notifications in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
 			},
 			{
 				"Type" : "Option",
@@ -458,7 +459,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Does the organisation structure catalyse and support a DevOps approach?"
+				"QuestionText" : "Does the organisation's structure catalyse and support a DevOps approach?"
 			},
 			{
 				"Type" : "Option",
