@@ -161,6 +161,7 @@
 				"Answers" : [
 					{"Answer" : "Virtual machine(s)", "Score" : 1},
 					{"Answer" : "Networks", "Score" : 1},
+					{"Answer" : "Security elements", "Score" : 1},
 					{"Answer" : "The application stack", "Score" : 1},
 					{"Answer" : "The application", "Score" : 1}
 					]
