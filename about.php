@@ -125,7 +125,7 @@
 							
 							<div class="card-body  pb-0 pt-0">
 								<h6>John Chatterton</h6>
-								<p class="small">Principal Enterprise Architect at Atos</p>
+								<p class="small">Principal Enterprise Architect</p>
 							</div>
 							<div class="card-footer text-center pt-0">
 								<?=RenderLinkedInLink('https://www.linkedin.com/in/john-chatterton-73940a9/')?>
