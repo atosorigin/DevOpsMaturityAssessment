@@ -159,17 +159,18 @@
 				"SubCategory" : "Environments",
 				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Virtual machine(s)", "Score" : 1},
-					{"Answer" : "Networks", "Score" : 1},
-					{"Answer" : "Security elements", "Score" : 1},
-					{"Answer" : "The application stack", "Score" : 1},
-					{"Answer" : "The application", "Score" : 1}
+					{"Answer" : "Virtual machines", "Score" : 0.5},
+					{"Answer" : "Networks", "Score" : 0.5},
+					{"Answer" : "Operating systems", "Score" : 0.5},
+					{"Answer" : "Security elements", "Score" : 0.5},
+					{"Answer" : "The application stacks", "Score" : 0.5},
+					{"Answer" : "The applications", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Environments",
-				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (e.g. right time)?"
+				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (i.e. at the right time or in a way that doesn’t incur delay to activity)?"
 			},
 			{
 				"Type" : "Option",
@@ -272,7 +273,7 @@
 					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
 					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
 					{"Answer" : "The application is largely monolithic but made up of code modules that can be worked on independently and then re-compiled into a single unit", "Score" : 1},
-					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirely as part of a release schedule", "Score" : 0}
+					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirety as part of a release schedule", "Score" : 0}
 					]
 			},
 			{
@@ -321,7 +322,7 @@
 				"SubCategory" : "CI",
 				"QuestionText" : "How frequently do developers integrate their changes into a shared mainline (trunk)?",
 				"Answers" : [
-					{"Answer" : "Code is integrated once per day or more", "Score" : 2},
+					{"Answer" : "Code is integrated at least once per day", "Score" : 2},
 					{"Answer" : "Code is integrated at least weekly", "Score" : 1},
 					{"Answer" : "Code is integrated infrequently but at least once a month", "Score" : 0.5},
 					{"Answer" : "Code is integrated on an ad hoc basis when the developer feels it is ready to share", "Score" : 0}
@@ -381,7 +382,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Refactoring",
-				"QuestionText" : "Is time allocated/dedicated to refactoring to improve code quality and reduce technical debt?"
+				"QuestionText" : "Is time allocated/dedicated to refactoring in order to improve code quality and reduce technical debt?"
 			},
 			{
 				"Type" : "Option",
@@ -422,7 +423,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Is the team a cross functional delivery team comprising development, testing and operations expertise?"
+				"QuestionText" : "Is the team a cross functional delivery team comprising of development, testing and operations expertise?"
 			},
 			{
 				"Type" : "Option",
