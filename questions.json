@@ -22,7 +22,7 @@
 				"Type" : "Checkbox",
 				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Elapsed lead time time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
+					{"Answer" : "Elapsed lead time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
 					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
 					{"Answer" : "Change failure rate", "Score" : 0.5},
 					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
