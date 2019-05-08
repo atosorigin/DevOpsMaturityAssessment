@@ -22,7 +22,7 @@
 				"Type" : "Checkbox",
 				"QuestionText" : "Which of the following are measured by the team (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Elapsed lead time time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
+					{"Answer" : "Elapsed lead time to deliver valuable changes (from initial request to production)", "Score" : 0.5},
 					{"Answer" : "Frequency of deployments into production", "Score" : 0.5},
 					{"Answer" : "Change failure rate", "Score" : 0.5},
 					{"Answer" : "Time to restore service after a failure", "Score" : 0.5}
@@ -55,7 +55,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are the most experienced team members are allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
+				"QuestionText" : "Are the most experienced team members allocated last so they can help others develop cross functional skills and be free to focus on the most business critical or complex problems?"
 			},
 			{
 				"Type" : "Checkbox",
@@ -118,7 +118,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "How frequently are their misunderstandings between members of the team?",
+				"QuestionText" : "How frequently are there misunderstandings between members of the team?",
 				"Answers" : [
 					{"Answer" : "Hardly ever", "Score" : 1},
 					{"Answer" : "Fairly frequently (at least once per week)", "Score" : 0.5},
@@ -127,7 +127,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and they are fairly represented?",
+				"QuestionText" : "Do people on the team share their ideas/concerns with the rest of the team and are they fairly represented?",
 				"Answers" : [
 					{"Answer" : "Yes, always", "Score" : 1},
 					{"Answer" : "Yes, most of the time", "Score" : 0.5},
@@ -159,15 +159,18 @@
 				"SubCategory" : "Environments",
 				"QuestionText" : "For which of these is the configuration and management of environments automated (tick all that apply)?",
 				"Answers" : [
-					{"Answer" : "Virtual machine(s)", "Score" : 1},
-					{"Answer" : "The application stack", "Score" : 1},
-					{"Answer" : "The application", "Score" : 1}
+					{"Answer" : "Virtual machines", "Score" : 0.5},
+					{"Answer" : "Networks", "Score" : 0.5},
+					{"Answer" : "Operating systems", "Score" : 0.5},
+					{"Answer" : "Security elements", "Score" : 0.5},
+					{"Answer" : "The application stacks", "Score" : 0.5},
+					{"Answer" : "The applications", "Score" : 0.5}
 					]
 			},
 			{
 				"Type" : "Option",
 				"SubCategory" : "Environments",
-				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (e.g. right time)?"
+				"QuestionText" : "Are the required environments (e.g. dev, test, integration) available in line with demand (i.e. at the right time or in a way that doesn’t incur delay to activity)?"
 			},
 			{
 				"Type" : "Option",
@@ -255,7 +258,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Is code developed to achieve automation developed with the same rigor as product code (e.g. testing, source control)?"
+				"QuestionText" : "Is automation code developed with the same rigor as product code (e.g. testing, source control)?"
 			}			
 		]
 	},
@@ -265,12 +268,12 @@
 		"Questions" : [
 			{
 				"Type" : "Option",
-				"QuestionText" : "Does the architecture of the application consists of loosely coupled components (choose the most accurate description)?",
+				"QuestionText" : "Does the architecture of the application consist of loosely coupled components (choose the most accurate description)?",
 				"Answers" : [
 					{"Answer" : "The application is built from a number of stateless components with scaling and resilience provided at the application layer (full MicroServices)", "Score" : 3},
 					{"Answer" : "The application is made up of several separate components but relies on external solutions to provide availability and scalability", "Score" : 2},
 					{"Answer" : "The application is largely monolithic but made up of code modules that can be worked on independently and then re-compiled into a single unit", "Score" : 1},
-					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirely as part of a release schedule", "Score" : 0}
+					{"Answer" : "The application is built up of monolithic code and can only be changed in its entirety as part of a release schedule", "Score" : 0}
 					]
 			},
 			{
@@ -295,7 +298,7 @@
 			},
 			{
 				"Type" : "Option",
-				"QuestionText" : "Are all application logs are written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
+				"QuestionText" : "Are all application logs written to a central log repository automatically with the configuration included in the environment design to allow portability between environments?"
 			}
 		]
 	},
@@ -319,7 +322,7 @@
 				"SubCategory" : "CI",
 				"QuestionText" : "How frequently do developers integrate their changes into a shared mainline (trunk)?",
 				"Answers" : [
-					{"Answer" : "Code is integrated once per day or more", "Score" : 2},
+					{"Answer" : "Code is integrated at least once per day", "Score" : 2},
 					{"Answer" : "Code is integrated at least weekly", "Score" : 1},
 					{"Answer" : "Code is integrated infrequently but at least once a month", "Score" : 0.5},
 					{"Answer" : "Code is integrated on an ad hoc basis when the developer feels it is ready to share", "Score" : 0}
@@ -360,7 +363,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "CI",
-				"QuestionText" : "Are adequate notifications are in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
+				"QuestionText" : "Are adequate notifications in place to communicate the build status and failures to the team (e.g. automated e-mails, slack, circuit)?"
 			},
 			{
 				"Type" : "Option",
@@ -379,7 +382,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Refactoring",
-				"QuestionText" : "Is time allocated/dedicated to refactoring to improve code quality and reduce technical debt?"
+				"QuestionText" : "Is time allocated/dedicated to refactoring in order to improve code quality and reduce technical debt?"
 			},
 			{
 				"Type" : "Option",
@@ -420,7 +423,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Is the team a cross functional delivery team comprising development, testing and operations expertise?"
+				"QuestionText" : "Is the team a cross functional delivery team comprising of development, testing and operations expertise?"
 			},
 			{
 				"Type" : "Option",
@@ -458,7 +461,7 @@
 			{
 				"Type" : "Option",
 				"SubCategory" : "Organisation Structure",
-				"QuestionText" : "Does the organisation structure catalyse and support a DevOps approach?"
+				"QuestionText" : "Does the organisation's structure catalyse and support a DevOps approach?"
 			},
 			{
 				"Type" : "Option",
